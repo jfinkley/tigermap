@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import "package:tigermap/screens/home_screen.dart";
+import "package:skegee_map/screens/home_screen.dart";
 
 void main() {
   runApp(MyApp());
