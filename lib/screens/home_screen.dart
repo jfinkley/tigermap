@@ -26,7 +26,9 @@ class HomeScreen extends StatelessWidget {
                   leading: Icon(Icons.push_pin_rounded),
                   actions: [
                     IconButton(
-                        icon: Icon(Icons.search_outlined), onPressed: () {})
+                        icon: Icon(Icons.search_outlined), onPressed: () {
+                          showSearch(context: context, delegate: BuildingSearch());
+                    })
                   ],
                 )
                     // TextField(
@@ -54,4 +56,37 @@ class HomeScreen extends StatelessWidget {
       ),
     );
   }
+}
+
+class BuildingSearch extends SearchDelegate{
+  @override
+  List<Widget> buildActions(BuildContext context) {
+    // TODO: implement buildActions
+    return [
+      IconButton(icon: Icon(Icons.clear),
+          onPressed: null)
+    ];
+  }
+
+  @override
+  Widget buildLeading(BuildContext context) {
+    // TODO: implement buildLeading
+    return IconButton(
+      // TODO Add Ios Platform Switcher
+      icon: Icon(Icons.arrow_back)
+    );
+  }
+
+  @override
+  Widget buildResults(BuildContext context) {
+    // TODO: implement buildResults
+    return Container();
+  }
+
+  @override
+  Widget buildSuggestions(BuildContext context) {
+    // TODO: implement buildSuggestions
+    return Container();
+  }
+
 }
