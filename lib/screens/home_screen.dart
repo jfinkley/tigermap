@@ -64,7 +64,9 @@ class BuildingSearch extends SearchDelegate{
     // TODO: implement buildActions
     return [
       IconButton(icon: Icon(Icons.clear),
-          onPressed: null)
+          onPressed: (){
+          query = '';
+          })
     ];
   }
 
@@ -73,7 +75,10 @@ class BuildingSearch extends SearchDelegate{
     // TODO: implement buildLeading
     return IconButton(
       // TODO Add Ios Platform Switcher
-      icon: Icon(Icons.arrow_back)
+      icon: Icon(Icons.arrow_back),
+      onPressed: (){
+
+      },
     );
   }
 
