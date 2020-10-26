@@ -7,7 +7,32 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0xffE3B821),
-      body: Search(),
+      body: Column(
+        children: [
+          Container(
+            height: MediaQuery.of(context).size.height/3,
+              width: MediaQuery.of(context).size.width,
+              child: Search()),
+          Container(
+            height: 2 * MediaQuery.of(context).size.height/3,
+            width: MediaQuery.of(context).size.width,
+            child: SizedBox.expand(
+              child: DraggableScrollableSheet(
+                initialChildSize: 0.4,
+                maxChildSize: 0.6,
+                minChildSize: 0.2,
+                builder: (BuildContext context, ScrollController scrollController) {
+                  return Container(
+                    child: Text(
+                      'it works'
+                    ),
+                  );
+                },
+              ),
+            ),
+          )
+        ],
+      ),
       // body: Column(
       //   children: [
       //     Search(),

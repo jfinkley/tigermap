@@ -10,10 +10,13 @@ class Search extends StatelessWidget {
             height: MediaQuery.of(context).size.height/3,
             width: MediaQuery.of(context).size.width,
             child: GoogleMap(
+              mapType: MapType.hybrid,
               initialCameraPosition:
               CameraPosition(
-                  target:
-                  LatLng(32.427183, -85.702267)),
+                  target: LatLng(32.427183, -85.702267),
+              zoom: 16),
+               // 2
+
             ),
           )
         ],
