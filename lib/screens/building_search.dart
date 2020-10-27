@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:skegee_map/constants.dart';
+
 class BuildingSearch extends SearchDelegate{
+  get building => kBuildings;
   @override
   List<Widget> buildActions(BuildContext context) {
     // TODO: implement buildActions
@@ -33,7 +35,8 @@ class BuildingSearch extends SearchDelegate{
   @override
   Widget buildSuggestions(BuildContext context) {
     // TODO: implement buildSuggestions
-    return Container();
+    //return Container();
+    final suggestionList = query.isEmpty ? kRecentBuildings : kBuildings;
   }
 
 }
