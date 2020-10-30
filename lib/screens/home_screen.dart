@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:skegee_map/screens/building_search.dart';
 import 'package:skegee_map/screens/search.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -18,14 +19,26 @@ class HomeScreen extends StatelessWidget {
             width: MediaQuery.of(context).size.width,
             child: SizedBox.expand(
               child: DraggableScrollableSheet(
-                initialChildSize: 0.4,
-                maxChildSize: 0.6,
+                initialChildSize: 0.6,
+                maxChildSize: 0.7,
                 minChildSize: 0.2,
                 builder: (BuildContext context, ScrollController scrollController) {
                   return Container(
-                    child: Text(
-                      'it works'
-                    ),
+                    child: Scaffold(
+                      appBar: AppBar(
+                        backgroundColor: Colors.red,
+                        title: Center(
+                          child: Text("Navigate Tuskegee"),
+                        ),
+                        leading: Icon(Icons.push_pin_rounded),
+                        actions: [
+                          IconButton(icon: Icon(Icons.search_sharp),
+                              onPressed: (){
+                            showSearch(context: context, delegate: BuildingSearch());
+                              })
+                        ],
+                      ) ,
+                    )
                   );
                 },
               ),
@@ -33,34 +46,7 @@ class HomeScreen extends StatelessWidget {
           )
         ],
       ),
-      // body: Column(
-      //   children: [
-      //     Search(),
-      //     SizedBox.expand(
-      //       child: DraggableScrollableSheet(
-      //         initialChildSize: 0.4,
-      //         maxChildSize: 0.6,
-      //         minChildSize: 0.2,
-      //         builder: (BuildContext context, ScrollController scrollController) {
-      //           return Container(
-      //               decoration: BoxDecoration(
-      //                 borderRadius: BorderRadius.circular(20),
-      //                 color: Colors.blue[100],
-      //               ),
-      //               child: Scaffold(
-      //                   appBar: AppBar(
-      //                 backgroundColor: Colors.red,
-      //                 title: Center(
-      //                   child: Text('Navigate Tuskegee'),
-      //                 ),
-      //                 leading: Icon(Icons.push_pin_rounded),
-      //                 actions: [
-      //                   IconButton(
-      //                       icon: Icon(Icons.search_outlined), onPressed: () {
-      //                         showSearch(context: context, delegate: BuildingSearch());
-      //                   })
-      //                 ],
-      //               )
+
       //                   // TextField(
       //                   //   enableSuggestions: true,
       //                   //   autofillHints: ['Rockefeller', 'LTRIMM'],
