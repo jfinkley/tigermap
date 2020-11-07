@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Tigermap</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+   
+    <!-- Localization string array of the building name -->
+    <string-array name="buildings">
+        <item>Welcome to TigerMap</item>
+        <item>Abbott Stadium</item>
+        <item>Armstrong Hall</item>
+        <item>Banneker Hall</item>
+        <item>Basil O Connor Hall</item>
+        <item>Bethune Hall</item>
+        <item>Bioethics</item>
+        <item>Booker T. Washington Monument</item>
+    	<item>Brimmer</item>
+        <item>Campbell Hall</item>
+        <item>Carnegie Hall</item>
+        <item>Carver Foundation</item>
+        <item>Centralized Laboratory Animal Research Facility</item>
+        <item>Chambliss Business House</item>
+        <item>Chappie James Arena</item>
+        <item>Convenience Store</item>
+        <item>Douglass Hall</item>
+        <item>East Commons</item>
+        <item>Emery I</item>
+        <item>Emery II</item>
+        <item>Emery III</item>
+        <item>Emery IV</item>
+        <item>Emery Recreation Building</item>
+        <item>Engineering Building</item>
+        <item>Ford Library</item>
+        <item>George Washington Carver Museum</item>
+      	<item>Harper Hall</item>
+      	<item>Harvey Hall</item>
+      	<item>Henderson Hall</item>
+      	<item>Housing</item>
+      	<item>Huntington Hall</item>
+      	<item>James Hall</item>
+      	<item>Kellogg Hotel and Conference Center</item>
+      	<item>Kresge Center</item>
+      	<item>Large Animal Clinic</item>
+      	<item>Lewis Adams Hall</item>
+      	<item>Logan Hall</item>
+      	<item>Marable Courts</item>
+      	<item>Margaret Murray Washington Hall</item>
+      	<item>Milbank Hall</item>
+      	<item>Morrison Mayberry Hall</item>
+      	<item>North Commons</item>
+      	<item>Old Administration Building</item>
+      	<item>Olivia Davidson Hall</item>
+      	<item>Patterson Hall</item>
+      	<item>Physical Plant</item>
+      	<item>Post Mortem Building</item>
+      	<item>Power Plant</item>
+      	<item>Robert Circle</item>
+      	<item>Robert R. Moton Hall</item>
+      	<item>Rockefeller Hall</item>
+      	<item>Rosenwald Hall</item>
+      	<item>ROTC</item>
+      	<item>Russell Hall</item>
+      	<item>Russell Nursery</item>
+      	<item>Sage Hall</item>
+      	<item>Small Animal Clinic</item>
+      	<item>Softball Field</item>
+      	<item>Tantum Hall</item>
+      	<item>Tennis Court</item>
+      	<item>The Oaks</item>
+      	<item>Thrasher Hall</item>
+      	<item>Tompkins Hall</item>
+      	<item>Tuskegee Univ. Police Dept.</item>
+      	<item>University Apartment</item>
+      	<item>University Chapel</item>
+      	<item>Washington Field</item>
+      	<item>West Commons</item>
+      	<item>White Hall</item>
+      	<item>Wilcox A</item>
+      	<item>Wilcox B</item>
+      	<item>Wilcox C</item>
+      	<item>Wilcox D</item>
+      	<item>Wilcox E</item>
+      	<item>William V. Chambliss House</item>
+      	<item>Williams - Bowie Hall</item>
+      	<item>Younge Hall</item>
+      	
+    </string-array>
+    <string name="abbott_building">Abbott Stadium</string>
+    <string name="abbott_info">Ground breaking exercises for Cleve L . Abbott Memorial Alumni Stadium (formerly Alumni Bowl) at Tuskegee University were held on Aug. 21, 1924. The stadium was the first of its kind to be built at any Black school in the South. It was named Alumni Bowl because of the significant contributions made by alumni for the construction of the facility. After 71 years of play in the grand old stadium, University officials formerly dedicated the facility by renaming it the Cleve L. Abbott Memorial Alumni Stadium on Nov. 9, 1996. Abbott, the most successful coach in the 106 year history of Tuskegee football, served as the Golden Tigers’ head coach from 1923 to 1954, winning 202 games, losing 95 and tying 27 in a 32-year coaching span. The present seating capacity of Abbott Memorial Alumni Stadium is 10,000.</string>
+    <string name="armstrong_building">Armstrong Hall</string>
+    <string name="armstrong_info">Science Center is located in Armstrong Hall.</string>
+    <string name="banneker_building">Banneker Hall</string>
+    <string name="banneker_info"> Is a Male Residence Hall for upperclassmen</string>
+    <string name="basil_building">Basil O Connor Hall</string>
+    <string name="basil_info">In 1965, the United States Bureau of Health Resources Development donated a grant of $427,000 that enabled Tuskegee University to erect Basil O’Connor Hall with more than 27,000 square feet of space that Tuskegee’s nursing program has occupied since June 1968. The nursing building serves as a memorial to Mr. Basil O’Connor, the philanthropic former Tuskegee Board of Trustees member.</string>
+    <string name="bethune_building">Bethune Hall</string> 
+    <string name="bethune_info">Is a Male Residence Hall for freshmen</string>
+    <string name="bioethics_building">Bioethics</string>   
+    <string name="bioethics_info">The John A. Andrew Complex is completely renovated as the location of the Tuskegee University National Center for Bioethics in Research and Health Care-the only center in the nation with its unique mission to serve African Americans and other underserved communities. The modern facility also includes classroom and office space for all College of Liberal Arts and Education (CLAE) programs, accommodations for the University archives and a museum. The Bioethics Center was established in 1999 under the leadership of Tuskegee’s fifth president, Dr. Benjamin F. Payton, and in response to the 1997 apology by President Bill Clinton for the United States Public Health Services Syphilis Study in Macon County, Alabama.</string>   
+    <string name="booker_building">Booker T. Washington Monument</string>
+    <string name="booker_info">This heroic bronze sculpture, crafted by architect Charles Keck, was unveiled on April15, 1922. When the Monument was unveiled more than 100,000 people were present to pay tribute to Tuskegee’s founder and first president. The monument shows Dr. Booker T. Washington “Lifting the Veil of Ignorance” and pointing the way to progress through education and industry.</string>
+    <string name="brimmer_building">Andrew F. Brimmer Hall</string>
+    <string name="brimmer_info">The College of Business and Information Science, located in the new Andrew F. Brimmer Hall, is a direct outgrowth of Tuskegee University’s historical mission and its emphasis on economic empowerment and business development. From its inception, Tuskegee has been a highly recognized and visible institution committed to the values of self help, business development and lifelong learning.</string>
+    <string name="campbell_building">Campbell Hall</string>
+    <string name="campbell_info">Built in 1921 to serve as a horse and mule barn until 1955, the building was later renamed the Farm Mechanization Building from 1955 to 1991. A 1988 renovation made the center section of the building three stories high. The building serves today as home for the College of Agricultural, Environmental and Natural Sciences (CAENS). Thomas Monroe Campbell, for whom the building is named, was the nation’s first cooperative extension agent and is a graduate of Tuskegee.</string>
+    <string name="carnegie_building">Carnegie Hall</string>
+    <string name="carnegie_info">Named in honor of its benefactor, Andrew Carnegie, the building was once the assembly hall where Dr. W.E.B. DuBois taught summer school in 1903 and Dr. George Washington Carver began teaching Bible classes in 1911. Carnegie Hall now houses the offices of Financial Aid Services, and the Career Development and Placement Services Center.</string>
+    <string name="carver_building">Carver Foundation</string>
+    <string name="carver_info">Named after the great agricultural scientist George Washington Carver, the Carver Research Foundation houses research labs for conducting basic science research primarily in prostate cancer. The one-floor facility consists of a classroom for graduate students, a conference room, a core research facility and offices and research labs. The research facility is funded in part through grants from the Research Centers in Minority Institutions (RCMI) of the National Institutes of Health.</string>
+    <string name="centralized_building">Centralized Laboratory Animal Research Facility</string>
+    <string name="centralized_info">The College has a modern animal facility capable of accommodating from rodents to large animals and well-organized Comparative Medicine Resource Center (CMRC) for research involving laboratory animals and small ruminants. The facility provides all services to researchers who have projects approved for animal use. The animal facility serves the biomedical research community in the university and is fully equipped with, among others, offices, garment changing areas, animal isolation/quarantine, housing rooms (for both conventional and special accommodations), and rooms for feed storage, cold holding and necropsy. A designated attending veterinarian, a facility manager, a center director and adequate non-technical support personnel are available.</string>
+    <string name="chambliss_building">Chambliss Business House</string>
+    <string name="chambliss_info">In 1930, the school served a dual purpose public elementary school and practice facility for students in the Department of Education. The Chambliss Business House previously served as the home of the College of Business.</string>
+    <string name="chappie_building">Chappie James Arena</string>
+    <string name="chappie_info">The James Center Arena is the third home for the Tuskegee Basketball Golden Tigers and Tigerettes. Huntington Hall served as the home court from 1908 to 1931 and Logan Hall from January 9, 1931 until 1987.</string>
+    <string name="convenience_building">Convenience Store</string>
+    <string name="convenience_info">New eatery, convenience store is established in 2013.</string>
+    <string name="douglass_building">Douglass Hall</string>
+    <string name="douglass_info">Named after Frederick Douglas, Douglass Hall was completed in 1904, but burned down in 1934. The building standing today is what was rebuilt after the fire. It was used as a woman’s dormitory and also housed a large auditorium.</string>
+    <string name="east_building">East Commons</string>
+    <string name="east_info">The Commons Apartments has two (2) and four (4) bedroom apartments available for Tuskegee University students meeting the requirement</string>
+    <string name="emeryi_building">Emery I</string>
+    <string name="emeryi_info">Singles Female Residence Halls</string>
+    <string name="emeryii_building">Emery II</string>
+    <string name="emeryii_info">Singles Female Residence Halls</string>
+    <string name="emeryiii_building">Emery III</string>
+    <string name="emeryiii_info">Singles Male Residence Halls</string>
+    <string name="emeryiv_building">Emery IV</string>
+    <string name="emeryiv_info">Singles Male Residence Halls</string>
+    <string name="emeryr_building">Emery Recreation Building</string>
+    <string name="emeryr_info">It was built in 1968. A low, one story concrete block structure built by buildings and grounds department near to Emery III</string>
+    <string name="engineering_building">Engineering Building</string>
+    <string name="engineering_info">Formerly named the Engineering Building, the facility was renamed in 2002 for the fourth president of Tuskegee University, Dr. Luther Hilton Foster. The building houses the administrative offices of the College of Engineering, Architecture and Physical Sciences (CEAPS).Tuskegee is a leading producer of African American engineers in the country, the leading producer of Blacks in mathematics, science and engineering in the state of Alabama and the only HBCU with accredited aerospace programs.</string>
+    <string name="ford_building">Ford Library</string>
+    <string name="ford_info">The library, originally constructed in 1932, eventually became overcrowded and too aged to function as a progressive University main library. Renovated and rededicated as the Ford Motor Company Library/Learning Resources Center in 2001, the three-story library is now a state-of-the-art facility with computer laboratories, more than 300,000 volumes, and more than 1,600 periodicals. One of the highlights is the Booker T. Washington Collection.</string>
+    <string name="george_building">George Washington Carver Museum</string>
+    <string name="george_info">Arguably be a ring the name of one of the most influential scientist of all time and certainly the most recognizable African-American agricultural researcher in history, the lifetime work of Dr.George Washington Carver is on display in the Museum. Authorized within the Tuskegee Institute National Historic Site for the preservation of historic structures in 1975, the property was purchased by the National Historic Park Service.</string>
+    <string name="harper_building">Harper Hall</string>
+   	<string name="harper_info">Named after former nurse name Mary Starke Harper 41 career in nursing spanned more than 30 years.A registered nurse, sociologist, clinical psychologist, secondary school educator, and program administrator, Dr. Harper holds degrees from St. Louis University, the University of Minnesota, and Tuskegee. She has provided consultations throughout the United States and Africa, Australia, Europe, the Middle East, North and South America. She was for a number of years coordinator of Long Term Care Programs, National Institute of Mental Health, U. S. Department of Health and Human Services.</string>
+   	<string name="harvey_building">Harvey Hall</string>
+   	<string name="harvey_info">Named after former nursing dean Lillian Harvey, the dormitory once solely housed students in the School of Nursing.</string>
+   	<string name="henderson_building">Henderson Hall</string>
+   	<string name="henderson_info">Carver Research Building is Agricultural Life Science, Research, Teaching and Extension Building. The building, 40,000 square-foot building will house state-of-the-art classrooms and laboratories to support science and agricultural education programs.</string>
+   	<string name="housing_building">Housing</string>
+   	<string name="housing_info">The duties and responsibilities of the housing office is to provide on campus housing for all students residing in the Residence Halls, Commons and Marable Apartments. Students must be accepted to the University and be enrolled full time for an academic year or semester.</string>
+   	<string name="huntington_building">Huntington Hall</string>
+   	<string name="huntington_info">Huntington Hall was completed in 1899 and was used as a women’s dormitory. It was named after the Huntington family, funds having been donated by the widow of Collis Huntington. Huntington made his fortune in the railroad business and was the president of the Cheasapeake and Ohio Railroad. The building went on to be used as the residence of staff members and also housed classrooms and faculty offices.</string>
+   	<string name="james_building">James Hall</string>
+   	<string name="james_info"> Is a Female/Male Residence Hall for upperclassmen</string>
+    <string name="kellogg_building">Kellogg Hotel and Conference Center</string>
+    <string name="kellogg_info">This building was completed in 1901 and used to teach the many trades for women. From 1938 to 1943 George Washington Carver lived here. Today it is used as a hotel, restaurant, and conference center and can also be reserved for weddings and other events. For more information, visit www.tuskegeekelloggcenter.com.</string>
+    <string name="kresge_building">Kresge Center</string>
+    <string name="kresge_info">The administrative home of the campus completed in 1976 houses faculty, student and administrative services divisions. The Kresge Center houses the offices of the President, University Advancement, Alumni Affairs, Provost, Business and Fiscal Affairs, Budget, Accounts Payable, Marketing and Communications, Sports Information, Human Resources Management, Bursar, Cashier, Registrar, Controller, Accounting,Payroll, Purchasing, Auxiliary Services, and Grants Management.</string>
+    <string name="largeanimal_building">Large Animal Clinic</string>
+    <string name="largeanimal_info">The Large Animal Care Center with 20,237 NSF, houses the faculty and staff of the Large Animal Medicine and Surgery Unit of the Department of Clinical Sciences, a divisible classroom with 130 student stations, a centralized surgical sterilization area and pharmacy, central supply, a student operating room suite for surgery on large and small animals, and animal quarters that contain 27 stalls for horses and/or cattle. The principal large animal surgery suite for client animals is also located in this building.</string>
+    <string name="lewis_building">Lewis Adams Hall</string>
+    <string name="lewis_info">It was built in 1964, and this is a women’s dormitory now.</string>
+    <string name="logan_building">Logan Hall</string>
+    <string name="logan_info">The Tuskegee Logan Hall Fitness Center is a modern 3000 square-feet facility located on the ground floor of Logan Hall. The facility was built in 2010 to provide an atmosphere in which the physical fitness needs, health and fitness concerns of Tuskegee University students, faculty and staff could be addressed.</string>
+    <string name="marable_building">Marable Courts</string>
+    <string name="marable_info">The Marable Apartments has two (2) bedroom apartments available for Tuskegee University students meeting the requirements</string>
+    <string name="margaret_building">Margaret Murray Washington Hall</string>
+    <string name="margaret_info">Named after Booker T. Washington’s third wife, Margaret, who as the Lady Principal of the school, this building was originally the home of the school’s agriculture department. It was built in 1897. It is now used as the university’s Welcome Center and has an auditorium, meeting spaces for students, a cafeteria, and a book store. It is also home to the Admissions Department.</string>
+    <string name="milbank_building">Milbank Hall</string>
+    <string name="milbank_info">Millbank Agricultural Hall was constructed in 1909. Gift of Mrs. Elizabeth M. Anderson. Agricultural classes were taught here. George Washington Carver had a laboratory in this building.</string>
+    <string name="morrison_building">Morrison Mayberry Hall</string>
+    <string name="morrison_info">Building of Agriculture and Environmental Sciences</string>
+    <string name="north_building">North Commons</string>
+    <string name="north_info">Students who are eligible upperclassmen enjoy the comforts of residing in the modern state-of-the-art living complexes. These apartment style living-learning facilities are cons t rusted on the University campus.</string>
+    <string name="old_building">Old Administration Building</string>
+    <string name="old_info">The offices of Admissions, Dean of Students, and Counseling Center are a part of this building, which previously housed the offices of the first three University presidents, a community post office and a bank /credit union for the residents of Tuskegee.</string>
+    <string name="olivia_building">Olivia Davidson Hall</string>
+    <string name="olivia_info">Female Residence Halls</string>
+    <string name="patterson_building">Patterson Hall</string>
+    <string name="patterson_info">The five-floor facility includes a media and student center, the school’s office of admissions and recruitment, the Patterson Hall Auditorium and atrium, the Office of the Dean and associate deans, the T.S. Williams Veterinary Medicine Library, a comprehensive classroom, and the departments of biomedical sciences and pathobiology.</string>
+    <string name="physical_building">Physical Plant</string>
+    <string name="physical_info">The space allocation and usage, as it relates to the School programmatic activities, are described on the following pages for each building in the Veterinary School Complex.</string>
+    <string name="mortem_building">Post Mortem Building</string>
+    <string name="mortem_info">The Post Mortem Building provides 4,126 NSF for faculty/staff offices, necropsy and poultry diagnostic laboratories, a small seminar room with 15 student stations, and a tissue trimming, solution preparation and gross photography room. This facility has recently been renovated including installation of a new HAVC system, three down draft tables for small animals, stainless steel cabinets and tables, a pneumatic necropsy table for large animals, ceiling mounted spot lights, a hoist, new sinks and a new cold room, safety showers, band saw, 30-seat amphitheater bleachers, a projection screen, a multiple head (7) microscope, a washer and dryer, safety shower/eye wash, and a portable high pressure washer/sterilizer.</string>
+    <string name="power_building">Power Plant</string>
+    <string name="power_info">The Power Plant was built in 1915 and was the source of the campus’ electricity. It appears dilapidated today and is no longer in use.</string>
+    <string name="robertcircle_building">Robert Circle</string>
+    <string name="robertcircle_info">Roberts Circle is a neighborhood in Tuskegee Institute</string>
+    <string name="robertr_building">Robert R. Moton Hall</string>
+    <string name="robertr_info">Robert Russa Motorn Hall was built in 1952. Engineering building until 1970, human resource center, job corps center headquarters since 1980. Designed to be built in three units for electrical, mechanical and civil engineering, only two units built. Built by institute construction department.</string>
+    <string name="rockefeller_building">Rockefeller Hall</string>
+    <string name="rockefeller_info">Rockefeller Hall built in 1903 through donations from John D. Rockefeller. Three story brick building originally was a boy dormitory housing 160 young men. In later years, it was used as a male dormitory.</string>
+	<string name="rosenwald_building">Rosenwald Hall</string>
+    <string name="rosenwald_info">The Department of Pathobiology utilizes this area to provide laboratory instruction in veterinary microbiology, virology, immunology, molecular biology, public health, epidemiology, and clinical microbiology and to provide microbiology laboratory instruction for nursing and allied health students. There are two smaller preparatory laboratories, a storage incubator, and an autoclave room adjacent to this laboratory.</string>
+	<string name="rotc_building">ROTC</string>
+    <string name="rotc_info">This building was completed in 1889 and is now the home of the university’s band. It is the oldest building remaining on campus and was originally used to teach vocational training.</string>
+	<string name="russellhall_building">Russell Hall</string>
+    <string name="russellhall_info">Is a Female Residence Hall for Upperclassmen</string>
+	<string name="russellnursery_building">Russell Nursery</string>
+    <string name="russellnursery_info">It was built in 1957. Laboratory school for school of education nursery and kindergarten. By construction department.</string>
+	<string name="sage_building">Sage Hall</string>
+    <string name="sage_info">Is a Female Residence Hall for Upperclassmen</string>
+	<string name="small_building">Small Animal Clinic</string>
+    <string name="small_info">The Small Animal Hospital occupies approximately 7,100 NSF of the clinical wing. In addition, an area outside approximately 25 feet from the building provides 6 holding (6 x 12) runs and an exercise area (60 x 40) for companion animal patients. Approximately 500 yards from the clinic is a 1,657 NSF dog kennel serving the programs of the Departments of Biomedical Sciences and Clinical Sciences.</string>
+	<string name="softball_building">Softball Field</string>
+    <string name="softball_info">The softball team played here.</string>
+	<string name="tantum_building">Tantum Hall</string>
+    <string name="tantum_info">Tantum Hall was built in 1907 and used as the male dormitory now. </string>
+	<string name="tennis_building">Tennis Court</string>
+    <string name="tennis_info">The Pepsico Tennis Courts were completed in 2001. Under the tutelage of head coach Gregory Green, Tuskegee played the 2001 men and women tennis seasons at this facility, which has five courts, lights and seating for approximately 200 spectators.</string>
+	<string name="oaks_building">The Oaks</string>
+    <string name="oaks_info">The students and faculty of Tuskegee constructed the family home of Dr. Booker T. Washington in 1899. It was the first home in Macon County, Alabama, to have running water and electricity. With eight rooms (five bedrooms, three bathrooms), three porches and its original furnishings, it is a mansion by present-day standards. The Oaks is now owned and maintained by the National Park Service under the authorized purchase for preservation of historic structures within the Tuskegee Institute National Historic Site.</string>
+	<string name="thrasher_building">Thrasher Hall</string>
+    <string name="thrasher_info">Named in memory of Max Bennett Thrasher of Westmoreland, New Hampshire, this handsome three-story brick building was built in 1893.</string>
+	<string name="tompkins_building">Tompkins Hall</string>
+    <string name="tompkins_info">Tompkins Hall was completed in 1910 and was the main dining hall at Tuskegee Institute. This building was later transformed into the Student Union, thus making it the central point on campus when it came to student life.</string>
+	<string name="police_building">Tuskegee Univ. Police Dept.</string>
+    <string name="police_info">The Tuskegee University Police Department (TUPD), in keeping with the standard police motto, "To Serve and Protect," is faced with a tremendous responsibility and an exciting challenge. The department has a total compliment of 33 full time employees and additional part-time employees. Members of the department are on duty 24 hours per day, 7 days a week.</string>
+	<string name="universityapartment_building">University Apartment</string>
+    <string name="universityapartment_info">All students especially international students who have completed four (4) semesters with a minimum of 55 hours, have a 2.3 GPA or higher before entering in the fall, independent students over 24 years of age are eligible for the University Apartments. </string>
+	<string name="universitychapel_building">University Chapel</string>
+    <string name="universitychapel_info">Originally constructed by the students and faculty in 1898, the“Cathedral of the South” was destroyed by fire in 1957. The religious and spiritual home for the campus was reconstructed in 1969, at a cost of $3.3 million. The home of the “Singing Windows” is considered an architectural wonder because there are no 90-degree angles between the exterior walls.</string>
+	<string name="washingtonfield_building">Washington Field</string>
+    <string name="washingtonfield_info">Washington Baseball Field was named after James B. Washington who came to Tuskegee from Hampton Institute in 1890. He is affectionately referred to as the "Father of Athletics at Tuskegee." Washington, the adopted brother of Booker T. Washington, organized the first Tuskegee baseball team in 1892.</string>
+	<string name="west_building">West Commons</string>
+    <string name="west_info">Students who are eligible upperclassmen enjoy the comforts of residing in the modern state-of-the-art living complexes. These apartment style Living learning facilities are constructed on the University campus.</string>
+	<string name="white_building">White Hall</string>
+	<string name="white_info">White Hall was completed in 1910 and was named after Alexander Moss White, with funds being donated by his children. The clock tower was added in 1913 and had a manual winding system. It was converted to electric in 1951 and still chimes today. The building was the main woman’s dormitory.</string>
+	<string name="wilcoxa_building">Wilcox A</string>
+	<string name="wilcoxa_info">Constructed in the 1920s, the Wilcox Buildings once housed the so called trades at Tuskegee: carpentry, plumbing, brick masonry, shoe repair, tailoring, and electricity. These structures are examples of buildings constructed by student labor. The buildings are named in honor of William G. Wilcox, member, Board of Trustees, 1907 to 1923.</string>
+	<string name="wilcoxb_building">Wilcox B</string>
+	<string name="wilcoxb_info">The offices of Campus Technology and the Faculty and Staff Instructional Technology Café have occupancy inside Wilcox B.</string>
+	<string name="wilcoxc_building">Wilcox C</string>
+	<string name="wilcoxc_info">Within Wilcox C is the Department of Architecture. Renovated in 1981.</string>
+	<string name="wilcoxd_building">Wilcox D</string>
+	<string name="wilcoxd_info">The buildings are named in honor of William G. Willcox, member, Board of Trustees, 1907 to 1923.</string>
+	<string name="wilcoxe_building">Wilcox E</string>
+	<string name="wilcoxe_info">Willcox E accommodates the Advanced Materials Testing Laboratory.</string>
+	<string name="williamv_building">William V. Chambliss House</string>
+	<string name="williamv_info">Constructed in 1928, the brick structure, donated by and named for William V. Chambliss, class of 1890, replaced the Children’s House built in 1901.</string>
+	<string name="williamsb_building">Williams - Bowie Hall</string>
+	<string name="williamsb_info">Named after Drs. T. S. Williams and Walter C. Bowie, the first and second deans, respectively, of the Tuskegee University School of Veterinary Medicine, Williams Bowie Hall was dedicated in 2002. Formally called the Food Animal Production, Research and Service Center, Williams-Bowie Hall is a multipurpose facility that houses the International Center for Tropical Animal Health, an audiovisual auto tutorial center, biomedical information management systems offices, the Biomedical Student Computing Laboratory, and the Center for Computational Epidemiology. In addition to a surgical and recovery suite, Williams Bowie Hall also includes instructional and research laboratories and faculty offices.</string>
+	<string name="younge_building">Younge Hall</string>
+	<string name="younge_info">Is a Female Residence Hall for freshmen</string>
+</resources>
+        
