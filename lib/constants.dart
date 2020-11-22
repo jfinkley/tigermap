@@ -3,6 +3,8 @@
 // TODO Add Redtails for C-Store
 //  TODO add Foster
 // and add Kenney for Bioethics
+import 'package:flutter/material.dart';
+
 final kBuildings = [
   'Abbott Stadium',
   'Brimmer',
@@ -83,7 +85,9 @@ final kBuildings = [
   'Younge Hall',
 
 ];
+final String kBrimmerInfo = 'The College of Business and Information Science, located in the new Andrew F. Brimmer Hall, is a direct outgrowth of Tuskegee University’s historical mission and its emphasis on economic empowerment and business development. From its inception, Tuskegee has been a highly recognized and visible institution committed to the values of self help, business development and lifelong learning';
 final kRecentBuildings = [
   'Brimmer',
   "Carnegie",
 ];
+final kMainYellow = Color(0xffE3B821);
