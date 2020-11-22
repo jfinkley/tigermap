@@ -3,9 +3,9 @@ import 'package:skegee_map/constants.dart';
 
 class BuildingSearch extends SearchDelegate {
   get building => kBuildings;
+
   @override
   List<Widget> buildActions(BuildContext context) {
-    // TODO: implement buildActions
     return [
       IconButton(
           icon: Icon(Icons.clear),
@@ -36,7 +36,7 @@ class BuildingSearch extends SearchDelegate {
       // the directions button would have to push to the Google Map
 
       color: Colors.red,
-      shape : StadiumBorder(),
+      shape: StadiumBorder(),
       child: Container(
         height: 100,
         width: 100,
@@ -54,30 +54,25 @@ class BuildingSearch extends SearchDelegate {
   Widget buildSuggestions(BuildContext context) {
     //return Container();
     // TOOO add autocomplete or autofill so the query is completed
-    final suggestionList = query.isEmpty ?
-    kRecentBuildings :
-    kBuildings.where((p) => p.startsWith(query)).toList();
+    final suggestionList = query.isEmpty
+        ? kRecentBuildings
+        : kBuildings.where((p) => p.startsWith(query)).toList();
     return ListView.builder(
       itemBuilder: (context, index) => ListTile(
-        onTap: (){
+        onTap: () {
           showResults(context);
         },
         leading: Icon(Icons.location_city),
         title: RichText(
-            text: TextSpan(
-                text: suggestionList[index].substring(0, query.length),
-              style: TextStyle(
-                color: Colors.black,fontWeight: FontWeight.bold
-              ),
+          text: TextSpan(
+              text: suggestionList[index].substring(0, query.length),
+              style:
+                  TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
               children: [
                 TextSpan(
-                  text: suggestionList[index].substring(query.length),
-                  style: TextStyle(
-                    color: Colors.grey
-                  )
-                )
-              ]
-            ),
+                    text: suggestionList[index].substring(query.length),
+                    style: TextStyle(color: Colors.grey))
+              ]),
         ),
       ),
       itemCount: suggestionList.length,

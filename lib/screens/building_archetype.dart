@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:skegee_map/constants.dart';
 
 class BuildingArchetype extends StatelessWidget {
+  static String id = 'building_archetype';
   String buildingTitle;
   String buildingInfo;
   double buildingLat;
