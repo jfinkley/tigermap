@@ -7,6 +7,19 @@ class Search extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      bottomNavigationBar: BottomAppBar(
+        child: Row(
+          mainAxisSize: MainAxisSize.max,
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: [
+            IconButton(
+                icon: Icon(Icons.search_outlined),
+                onPressed: () {
+                  print('hold');
+                })
+          ],
+        ),
+      ),
       body: Column(
         children: [
           Container(
