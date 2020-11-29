@@ -1,24 +1,46 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:skegee_map/screens/building_archetype.dart';
+import 'package:skegee_map/screens/building_search.dart';
 
-class Search extends StatelessWidget {
+class Search extends StatefulWidget {
   static String id = 'search_screen';
+  @override
+  _SearchState createState() => _SearchState();
+}
+
+class _SearchState extends State<Search> {
+
+  int _selectedIndex = 0;
+  static const TextStyle optionStyle =
+  TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
+  static const List<Widget> _widgetOptions = <Widget>[
+    Text(
+      'Index 0: Home',
+      style: optionStyle,
+    ),
+    Text(
+      'Index 1: Business',
+      style: optionStyle,
+    ),
+    Text(
+      'Index 2: School',
+      style: optionStyle,
+    ),
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: BottomAppBar(
-        child: Row(
-          mainAxisSize: MainAxisSize.max,
-          mainAxisAlignment: MainAxisAlignment.end,
-          children: [
-            IconButton(
-                icon: Icon(Icons.search_outlined),
-                onPressed: () {
-                  print('hold');
-                })
-          ],
-        ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+              icon: Icon(Icons.list_sharp),
+              title: Text('Home')
+          ),
+          BottomNavigationBarItem(icon: Icon(Icons.search),
+          title: Text('Search'))
+        ],
+
       ),
       body: Column(
         children: [
@@ -36,3 +58,20 @@ class Search extends StatelessWidget {
     );
   }
 }
+
+
+
+//   @override
+//   Search createState() => Search();
+// }
+// child: Row(
+// mainAxisSize: MainAxisSize.max,
+// mainAxisAlignment: MainAxisAlignment.end,
+// children: [
+// IconButton(
+// icon: Icon(Icons.search_outlined),
+// onPressed: () {
+// // Navigator.pushNamed(context, )
+// })
+// ],
+// ),

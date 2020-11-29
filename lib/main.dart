@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:skegee_map/screens/building_archetype.dart';
+import 'package:skegee_map/screens/building_search.dart';
 import "package:skegee_map/screens/home_screen.dart";
 import 'package:skegee_map/constants.dart';
 import 'package:skegee_map/screens/search.dart';

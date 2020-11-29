@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:skegee_map/constants.dart';
 
 class BuildingSearch extends SearchDelegate {
+  static String id = 'BuildingSearch';
   get building => kBuildings;
 
   @override
