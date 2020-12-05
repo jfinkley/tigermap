@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:skegee_map/screens/building_archetype.dart';
+import 'package:skegee_map/constants.dart';
 import 'package:skegee_map/screens/building_search.dart';
 
 class Search extends StatefulWidget {
@@ -51,6 +51,19 @@ class _SearchState extends State<Search> {
               mapType: MapType.hybrid,
               initialCameraPosition: CameraPosition(
                   target: LatLng(32.427183, -85.702267), zoom: 16),
+            ),
+          ),
+          SizedBox(height: 10,),
+          Expanded(
+            child: ListView.builder(
+              itemCount: kBuildings.length,
+              itemBuilder: (context, index){
+                return Card(
+                  child: ListTile(
+                    title: Text(kBuildings[index]),
+                  ),
+                );
+              },
             ),
           )
         ],

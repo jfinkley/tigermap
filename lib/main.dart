@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'file:///C:/MobDev/tigermap/lib/models/building_archetype.dart';
+import 'package:skegee_map/models/building_archetype.dart';
 import 'package:skegee_map/screens/building_search.dart';
 import "package:skegee_map/screens/home_screen.dart";
 import 'package:skegee_map/constants.dart';
