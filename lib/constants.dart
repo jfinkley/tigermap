@@ -5,6 +5,8 @@
 // and add Kenney for Bioethics
 import 'package:flutter/material.dart';
 
+import 'models/building_archetype.dart';
+
 final kBuildings = [
   'Abbott Stadium',
   'Brimmer',
@@ -92,7 +94,7 @@ final String kBasilInfo = 'In 1965, the United States Bureau of Health Resources
 final kBannekerInfo = 'Is a Male Residence Hall for upperclassmen';
 final String kBethuneInfo = 'Is a Male Residence Hall for freshmen';
 final String kBioethicsInfo = 'The John A. Andrew Complex is completely renovated as the location of the Tuskegee University National Center for Bioethics in Research and Health Care-the only center in the nation with its unique mission to serve African Americans and other underserved communities. The modern facility also includes classroom and office space for all College of Liberal Arts and Education (CLAE) programs, accommodations for the University archives and a museum. The Bioethics Center was established in 1999 under the leadership of Tuskegee’s fifth president, Dr. Benjamin F. Payton, and in response to the 1997 apology by President Bill Clinton for the United States Public Health Services Syphilis Study in Macon County, Alabama.';
-final String kBrimmerInfo = 'The College of Business and Information Science, located in the new Andrew F. Brimmer Hall, is a direct outgrowth of Tuskegee University’s historical mission and its emphasis on economic empowerment and business development. From its inception, Tuskegee has been a highly recognized and visible institution committed to the values of self help, business development and lifelong learning';
+ String kBrimmerInfo = 'The College of Business and Information Science, located in the new Andrew F. Brimmer Hall, is a direct outgrowth of Tuskegee University’s historical mission and its emphasis on economic empowerment and business development. From its inception, Tuskegee has been a highly recognized and visible institution committed to the values of self help, business development and lifelong learning';
 final String kBookerInfo = 'This heroic bronze sculpture, crafted by architect Charles Keck, was unveiled on April15, 1922. When the Monument was unveiled more than 100,000 people were present to pay tribute to Tuskegee’s founder and first president. The monument shows Dr. Booker T. Washington “Lifting the Veil of Ignorance” and pointing the way to progress through education and industry.';
 final String kCampbellInfo = 'Built in 1921 to serve as a horse and mule barn until 1955, the building was later renamed the Farm Mechanization Building from 1955 to 1991. A 1988 renovation made the center section of the building three stories high. The building serves today as home for the College of Agricultural, Environmental and Natural Sciences (CAENS). Thomas Monroe Campbell, for whom the building is named, was the nation’s first cooperative extension agent and is a graduate of Tuskegee.';
 final String kCarnegieInfo = 'Named in honor of its benefactor, Andrew Carnegie, the building was once the assembly hall where Dr. W.E.B. DuBois taught summer school in 1903 and Dr. George Washington Carver began teaching Bible classes in 1911. Carnegie Hall now houses the offices of Financial Aid Services, and the Career Development and Placement Services Center.';
@@ -128,9 +130,41 @@ final String kMorrisInfo = 'Building of Agriculture and Environmental Sciences';
 final String kNorthCommonsInfo = 'Students who are eligible upperclassmen enjoy the comforts of residing in the modern state-of-the-art living complexes. These apartment style living-learning facilities are cons t rusted on the University campus.';
 final String kOldAdministrationInfo = 'The offices of Admissions, Dean of Students, and Counseling Center are a part of this building, which previously housed the offices of the first three University presidents, a community post office and a bank /credit union for the residents of Tuskegee.';
 final String kPattersonInfo = 'The five-floor facility includes a media and student center, the school’s office of admissions and recruitment, the Patterson Hall Auditorium and atrium, the Office of the Dean and associate deans, the T.S. Williams Veterinary Medicine Library, a comprehensive classroom, and the departments of biomedical sciences and pathobiology';
-final String k = '';
+final String kPhysicalBuilding = 'The space allocation and usage, as it relates to the School programmatic activities, are described on the following pages for each building in the Veterinary School Complex.';
+final String kPostMortemBuilding = 'The Post Mortem Building provides 4,126 NSF for faculty/staff offices, necropsy and poultry diagnostic laboratories, a small seminar room with 15 student stations, and a tissue trimming, solution preparation and gross photography room. This facility has recently been renovated including installation of a new HAVC system, three down draft tables for small animals, stainless steel cabinets and tables, a pneumatic necropsy table for large animals, ceiling mounted spot lights, a hoist, new sinks and a new cold room, safety showers, band saw, 30-seat amphitheater bleachers, a projection screen, a multiple head (7) microscope, a washer and dryer, safety shower/eye wash, and a portable high pressure washer/sterilizer.';
+final String kPowerPlant = 'The Power Plant was built in 1915 and was the source of the campus’ electricity. It appears dilapidated today and is no longer in use.';
+final String kMotonHall = 'Robert Russa Motorn Hall was built in 1952. Engineering building until 1970, human resource center, job corps center headquarters since 1980. Designed to be built in three units for electrical, mechanical and civil engineering, only two units built. Built by institute construction department.';
+final String kRockefellerHall = 'Rockefeller Hall built in 1903 through donations from John D. Rockefeller. Three story brick building originally was a boy dormitory housing 160 young men. In later years, it was used as a male dormitory.';
+final String kRosenwaldBuilding = 'The Department of Pathobiology utilizes this area to provide laboratory instruction in veterinary microbiology, virology, immunology, molecular biology, public health, epidemiology, and clinical microbiology and to provide microbiology laboratory instruction for nursing and allied health students. There are two smaller preparatory laboratories, a storage incubator, and an autoclave room adjacent to this laboratory.';
+final String kROTCBuilding = 'Home of the NROTC';
+final String kRussellHall = 'Is a Female Residence Hall for Upperclassmen';
+final String kRussellNursery = 'It was built in 1957. Laboratory school for school of education nursery and kindergarten.';
+final String kSageHall = 'Is a Female Residence Hall for Underclassmen';
+final String kSmallClinic = 'The Small Animal Hospital occupies approximately 7,100 NSF of the clinical wing. In addition, an area outside approximately 25 feet from the building provides 6 holding (6 x 12) runs and an exercise area (60 x 40) for companion animal patients. Approximately 500 yards from the clinic is a 1,657 NSF dog kennel serving the programs of the Departments of Biomedical Sciences and Clinical Sciences.';
+final String kTantumHall = 'Tantum Hall was built in 1907 and used as a female dormitory now.';
+final String kTennisCourt = 'The Pepsico Tennis Courts were completed in 2001. Under the tutelage of head coach Gregory Green, Tuskegee played the 2001 men and women tennis seasons at this facility, which has five courts, lights and seating for approximately 200 spectators.';
+final String kOaks = 'The students and faculty of Tuskegee constructed the family home of Dr. Booker T. Washington in 1899. It was the first home in Macon County, Alabama, to have running water and electricity. With eight rooms (five bedrooms, three bathrooms), three porches and its original furnishings, it is a mansion by present-day standards. The Oaks is now owned and maintained by the National Park Service under the authorized purchase for preservation of historic structures within the Tuskegee Institute National Historic Site.';
+final String kThrasherHall = 'Named in memory of Max Bennett Thrasher of Westmoreland, New Hampshire, this handsome three-story brick building was built in 1893.';
+final String kTompkins = 'Tompkins Hall was completed in 1910 and was the main dining hall at Tuskegee Institute. This building was later transformed into the Student Union, thus making it the central point on campus when it came to student life.  ';
+// final String k = '';
+// final String k = '';
+// final String k = '';
+// final String k = '';
 final kRecentBuildings = [
   'Brimmer',
   "Carnegie",
 ];
+
+Map contacts = Map<String, int>();
+void working (){
+var buildingDirectory = Map<String, BuildingArchetype>();
+buildingDirectory['Brimmer'] = BuildingArchetype(
+title: 'Brimmer',
+info: kBrimmerInfo,
+lat: 32.427183,
+long: -85.702267,
+);
+
+}
+// Colors
 final kMainYellow = Color(0xffE3B821);

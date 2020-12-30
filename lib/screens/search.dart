@@ -54,6 +54,18 @@ class _SearchState extends State<Search> {
             ),
           ),
           SizedBox(height: 10,),
+          ExpansionTile(
+            children: [
+              Text('MVP'),
+              FlatButton(
+                onPressed: (){
+                  print('pressed');
+                },
+                color: Colors.red,
+              )
+            ],
+            title:Text('Brimmer'),
+          ),
           Expanded(
             child: ListView.builder(
               itemCount: kBuildings.length,
@@ -61,6 +73,17 @@ class _SearchState extends State<Search> {
                 return Card(
                   child: ListTile(
                     title: Text(kBuildings[index]),
+                    onTap: (){
+                      // print(kBuildings[index]);
+                      print('something is not broken');
+                    },
+                    trailing: IconButton(
+                      icon: Icon(Icons.directions),
+                      onPressed: (){
+                        print('Navigate pressed');
+
+                      },
+                    ),
                   ),
                 );
               },
