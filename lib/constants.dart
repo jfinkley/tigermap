@@ -164,7 +164,12 @@ info: kBrimmerInfo,
 lat: 32.427183,
 long: -85.702267,
 );
-
+buildingDirectory['Brimmer'] = BuildingArchetype(
+  title: 'Brimmer',
+  info: kBrimmerInfo,
+  lat: 32.427183,
+  long: -85.702267,
+);
 }
 // Colors
 final kMainYellow = Color(0xffE3B821);

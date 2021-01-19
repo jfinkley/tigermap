@@ -1,10 +1,11 @@
 class Location{
   final double lat;
-  final double long;
+  final double lng;
 
-  Location({this.lat, this.long});
-  Location.fromJson(Map <dynamic,dynamic> parsedJson, this.long)
+  Location({this.lat, this.lng});
+ // ignore: missing_return
+  Location.fromJson(Map <dynamic,dynamic> parsedJson)
   :lat = parsedJson['lat'],
-  long = parsedJson['lng'];
+  lng = parsedJson['lng'];
 
 }

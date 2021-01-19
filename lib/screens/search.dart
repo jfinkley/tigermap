@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:geolocator/geolocator.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:skegee_map/constants.dart';
+import 'package:provider/provider.dart';
 import 'package:skegee_map/screens/building_search.dart';
 
 class Search extends StatefulWidget {
@@ -30,6 +32,7 @@ class _SearchState extends State<Search> {
   ];
   @override
   Widget build(BuildContext context) {
+    final currentPosition = Provider.of<Position>(context);
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
@@ -42,7 +45,8 @@ class _SearchState extends State<Search> {
         ],
 
       ),
-      body: Column(
+      body: (currentPosition != null) ?
+      Column(
         children: [
           Container(
             height: MediaQuery.of(context).size.height / 3,
@@ -58,6 +62,11 @@ class _SearchState extends State<Search> {
             children: [
               Text('MVP'),
               FlatButton(
+                child: Container(
+                  child: Text(
+                    'Ipsum Lorem'
+                  ),
+                ),
                 onPressed: (){
                   print('pressed');
                 },
@@ -90,7 +99,10 @@ class _SearchState extends State<Search> {
             ),
           )
         ],
-      ),
+      ):
+          Center(
+            child: CircularProgressIndicator(),
+          )
     );
   }
 }

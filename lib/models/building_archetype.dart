@@ -10,7 +10,7 @@ class BuildingArchetype extends StatelessWidget {
 
  // BuildingArchetype(this.buildingTitle, this.buildingInfo, this.lat, this.long);
   BuildingArchetype({@required String title, @required String info,
-    @required double lat, @required double long}){
+    @required double lat,  double long}){
     this.buildingTitle = title;
     this.buildingInfo = info;
     this.buildingLat = lat;
