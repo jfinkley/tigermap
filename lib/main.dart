@@ -9,9 +9,14 @@ import 'package:skegee_map/constants.dart';
 import 'package:skegee_map/screens/search.dart';
 import 'package:skegee_map/services/geolocator_service.dart';
 import 'package:skegee_map/services/places_service.dart';
-
+import 'dart:io'; // Server side / command line only package.
 void main() {
-  runApp(MyApp());
+  //runApp(MyApp());
+    Map<String, String> env = Platform.environment;
+    env.forEach((k, v) => print("Key=$k Value=$v"));
+  // Map<String, String> envVars = Platform.environment;
+  // print(envVars['PATH']);
+
 }
 
 class MyApp extends StatelessWidget {
