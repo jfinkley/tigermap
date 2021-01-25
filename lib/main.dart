@@ -10,13 +10,21 @@ import 'package:skegee_map/screens/search.dart';
 import 'package:skegee_map/services/geolocator_service.dart';
 import 'package:skegee_map/services/places_service.dart';
 import 'dart:io'; // Server side / command line only package.
+
 void main() {
-  //runApp(MyApp());
-    Map<String, String> env = Platform.environment;
-    env.forEach((k, v) => print("Key=$k Value=$v"));
+  runApp(MyApp());
+    // Map<String, String> env = Platform.environment;
+  //  env.forEach((k, v) => print("Key=$k Value=$v"));
   // Map<String, String> envVars = Platform.environment;
+ // var newMap = buildingMap();
+  //newMap.forEach((k, v) => print("Key =$k Value=$v"));
   // print(envVars['PATH']);
 
+}
+
+Map buildingMap (){
+  Map<String,String> fruit = new Map();
+  return fruit;
 }
 
 class MyApp extends StatelessWidget {
