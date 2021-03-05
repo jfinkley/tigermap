@@ -14,453 +14,11 @@ class Search extends StatefulWidget {
 }
 
 class _SearchState extends State<Search> {
+  BuildContext context;
   int _selectedIndex = 0;
   static const TextStyle optionStyle =
       TextStyle(fontSize: 31, fontWeight: FontWeight.bold);
-  static List<Widget> _widgetOptions = <Widget>[
-    Column(
-      children: [
-        // Container(
-        // (currentPosition != null)
-        // height: MediaQuery.of(context).size.height / 3,
-        // width: MediaQuery.of(context).size.width,
-        // child: GoogleMap(
-        // mapType: MapType.hybrid,
-        // initialCameraPosition: CameraPosition(
-        // target: LatLng(32.427183, -85.702267), zoom: 16),
-        // ),
-        // ),
-        SizedBox(
-          height: 10,
-        ),
-        Expanded(
-          child: ListView.builder(
-            itemCount: kBuildings.length,
-            itemBuilder: (context, index) {
-              return Card(
-                child: ListTile(
-                  title: Text(kBuildings[index]),
-                  onTap: () {
-// print(kBuildings[index]);
-                    print('something is not broken');
-// Map newMap = buildingMap();
-// print(newMap.isEmpty);
-                  },
-                  trailing: IconButton(
-                      icon: Icon(Icons.directions),
-                      onPressed: () {
-                        print('Navigate pressed');
-                        print(kBuildings[index]);
-                        switch (kBuildings[index]) {
-                          case 'Abbott Stadium':
-                            {
-                              print(kAbbott_url);
-                              print(kAbbottInfo);
-//launchURL(kAbbott_url);
 
-                            }
-                            break;
-                          case 'Brimmer':
-                            {
-                              print(kBrimmer_url);
-                              print(kBrimmerInfo);
-                              launchURL(kBrimmer_url);
-                            }
-                            break;
-                          case 'Armstrong Hall':
-                            {
-                              print(kArmstrong_url);
-                              print(kArmstrongInfo);
-                              launchURL(kArmstrong_url);
-                            }
-                            break;
-                          case 'Banneker Hall':
-                            {
-                              print(kBanneker_url);
-                              print(kBannekerInfo);
-                              launchURL(kBanneker_url);
-                            }
-                            break;
-                          case 'Basil O Connor Hall':
-                            {
-                              launchURL(kBasil_url);
-                            }
-                            break;
-                          case 'Bethune Hall':
-                            {
-                              launchURL(kBethune_url);
-                            }
-                            break;
-                          case 'Bioethics':
-                            {
-                              launchURL(kBioethics_url);
-                            }
-                            break;
-                          case 'Booker T. Washington Monument':
-                            {
-                              launchURL(kBooker_url);
-                            }
-                            break;
-                          case 'Brimmer':
-                            {
-                              launchURL(kBrimmer_url);
-                            }
-                            break;
-                          case 'Campbell Hall':
-                            {
-                              launchURL(kCampbell_url);
-                            }
-                            break;
-                          case 'Carnegie Hall':
-                            {
-                              launchURL(kCarnegie_url);
-                            }
-                            break;
-                          case 'Carver Foundation':
-                            {
-                              launchURL(kCarver_url);
-                            }
-                            break;
-                          case 'Centralized Laboratory Animal Research Facility':
-                            {
-                              launchURL(kCentralized_url);
-                            }
-                            break;
-                          case 'Chambliss Business House':
-                            {
-                              launchURL(kChambliss_url);
-                            }
-                            break;
-                          case 'Chappie James Arena':
-                            {
-                              launchURL(kChappie_url);
-                            }
-                            break;
-                          case 'Convenience Store':
-                            {
-                              launchURL(kConvenience_url);
-                            }
-                            break;
-                          case 'Douglass Hall':
-                            {
-                              launchURL(kDouglass_url);
-                            }
-                            break;
-                          case 'East Commons':
-                            {
-                              launchURL(kEast_url);
-                            }
-                            break;
-                          case 'Emery I':
-                            {
-                              launchURL(kEmeryI_url);
-                            }
-                            break;
-                          case 'Emery II':
-                            {
-                              launchURL(kEmeryII_url);
-                            }
-                            break;
-                          case 'Emery III':
-                            {
-                              launchURL(kEmeryIII_url);
-                            }
-                            break;
-                          case 'Emery IV':
-                            {
-                              launchURL(kEmeryIV_url);
-                            }
-                            break;
-                          case 'Emery Recreation Building':
-                            {
-                              launchURL(kEmeryR_url);
-                            }
-                            break;
-                          case 'Engineering Building':
-                            {
-                              launchURL(kEngineering_url);
-                            }
-                            break;
-                          case 'Ford Library':
-                            {
-                              launchURL(kFord_url);
-                            }
-                            break;
-                          case 'George Washington Carver Museum':
-                            {
-                              launchURL(kCarver_url);
-                            }
-                            break;
-                          case 'Harper Hall':
-                            {
-                              launchURL(kHarper_url);
-                            }
-                            break;
-                          case 'Harvey Hall':
-                            {
-                              launchURL(kHarvey_url);
-                            }
-                            break;
-                          case 'Henderson Hall':
-                            {
-                              launchURL(kHenderson_url);
-                            }
-                            break;
-                          case 'Housing':
-                            {
-                              launchURL(kHousing_url);
-                            }
-                            break;
-                          case 'Huntington Hall':
-                            {
-                              launchURL(kHuntington_url);
-                            }
-                            break;
-                          case 'James Hall':
-                            {
-                              launchURL(kHuntington_url);
-                            }
-                            break;
-                          case 'Kellogg Hotel and Conference Center':
-                            {
-                              launchURL(kKellogg_url);
-                            }
-                            break;
-                          case 'Kresge Center':
-                            {
-                              launchURL(kKresge_url);
-                            }
-                            break;
-                          case 'Large Animal Clinic':
-                            {
-                              launchURL(kLargeAnimal_url);
-                            }
-                            break;
-                          case 'Lewis Adams Hall':
-                            {
-                              launchURL(kLewis_url);
-                            }
-                            break;
-                          case 'Logan Hall':
-                            {
-                              launchURL(kLogan_url);
-                            }
-                            break;
-                          case 'Marable Courts':
-                            {
-                              launchURL(kMarable_url);
-                            }
-                            break;
-                          case 'Margaret Murray Washington Hall':
-                            {
-                              launchURL(kMargaret_url);
-                            }
-                            break;
-                          case 'Milbank Hall':
-                            {
-                              launchURL(kMilbank_url);
-                            }
-                            break;
-                          case 'Morrison Mayberry Hall':
-                            {
-                              launchURL(kMorrison_url);
-                            }
-                            break;
-                          case 'North Commons':
-                            {
-                              launchURL(kNorth_url);
-                            }
-                            break;
-                          case 'Old Adminsitration Building':
-                            {
-                              launchURL(kOld_building_url);
-                            }
-                            break;
-                          case 'Olivia Davidson Hall':
-                            {
-                              launchURL(kOlivia_url);
-                            }
-                            break;
-                          case 'Patterson Hall':
-                            {
-                              launchURL(kFord_url);
-                            }
-                            break;
-                          case 'Physical Plant':
-                            {
-                              launchURL(kPhysical_url);
-                            }
-                            break;
-                          case 'Post Mortem Building':
-                            {
-                              launchURL(kPostMortem_url);
-                            }
-                            break;
-                          case 'Power Plant':
-                            {
-                              launchURL(kPower_url);
-                            }
-                            break;
-                          case 'Robert Circle':
-                            {
-                              launchURL(kRobertCircle_url);
-                            }
-                            break;
-                          case 'Robert R. Moton Hall':
-                            {
-                              launchURL(kRobertR_url);
-                            }
-                            break;
-                          case 'Rockefeller Hall':
-                            {
-                              launchURL(kRockefeller_url);
-                            }
-                            break;
-                          case 'Rosenwald Hall':
-                            {
-                              launchURL(kRosenwald_url);
-                            }
-                            break;
-                          case 'ROTC':
-                            {
-                              launchURL(kROTC_url);
-                            }
-                            break;
-                          case 'Russell Hall':
-                            {
-                              launchURL(kRussell_url);
-                            }
-                            break;
-                          case 'Russell Nursery':
-                            {
-                              launchURL(kRussellNursery_url);
-                            }
-                            break;
-                          case 'Sage Hall':
-                            {
-                              launchURL(kSage_url);
-                            }
-                            break;
-                          case 'Small Animal Clinic':
-                            {
-                              launchURL(kSmall_url);
-                            }
-                            break;
-                          case 'Softball Field':
-                            {
-                              launchURL(kSoftball_url);
-                            }
-                            break;
-                          case 'Tantum Hall':
-                            {
-                              launchURL(kTantum_url);
-                            }
-                            break;
-                          case 'The Oaks':
-                            {
-                              launchURL(kOaks_url);
-                            }
-                            break;
-                          case 'Thrasher Hall':
-                            {
-                              launchURL(kThrasher_url);
-                            }
-                            break;
-                          case 'Tompkins Hall':
-                            {
-                              launchURL(kTompkins_url);
-                            }
-                            break;
-                          case 'Tuskegee Univ. Police Dept.':
-                            {
-                              launchURL(kPolice_url);
-                            }
-                            break;
-                          case 'University Apartment':
-                            {
-                              launchURL(kUniversityApartment_url);
-                            }
-                            break;
-                          case 'University Chapel':
-                            {
-                              launchURL(kUniversityChapel_url);
-                            }
-                            break;
-                          case 'Washington Field':
-                            {
-                              launchURL(kWashingtonField_url);
-                            }
-                            break;
-                          case 'West Commons':
-                            {
-                              launchURL(kWest_url);
-                            }
-                            break;
-                          case 'White Hall':
-                            {
-                              launchURL(kWhite_url);
-                            }
-                            break;
-                          case 'WIlcox A':
-                            {
-                              launchURL(kWilcoxA_url);
-                            }
-                            break;
-                          case 'Wilcox B':
-                            {
-                              launchURL(kWilcoxB_url);
-                            }
-                            break;
-                          case 'Wilcox C':
-                            {
-                              launchURL(kWilcoxC_url);
-                            }
-                            break;
-                          case 'Wilcox D':
-                            {
-                              launchURL(kWilcoxD_url);
-                            }
-                            break;
-                          case 'Wilcox E':
-                            {
-                              launchURL(kWilcoxE_url);
-                            }
-                            break;
-                          case 'William V. Chambliss House':
-                            {
-                              launchURL(kChambliss_url);
-                            }
-                            break;
-                          case 'Williams - Bowie Hall':
-                            {
-                              launchURL(kWilliamsB_url);
-                            }
-                            break;
-                          case 'Younge Hall':
-                            {
-                              launchURL(kYounge_url);
-                            }
-                            break;
-                        }
-                      }),
-                ),
-              );
-            },
-          ),
-        )
-      ],
-    ),
-    // Text(
-    //   'Index 1: Business',
-    //   style: optionStyle,
-    // ),
-    Scaffold(
-      body: Text(
-        'Index 2: School',
-        style: optionStyle,
-      ),
-    ),
-  ];
 
   void _onItemTapped(int index) {
     setState(() {
@@ -470,6 +28,457 @@ class _SearchState extends State<Search> {
 
   @override
   Widget build(BuildContext context) {
+    List<Widget> _widgetOptions = <Widget>[
+      Column(
+        children: [
+          // Container(
+          // (currentPosition != null)
+          // height: MediaQuery.of(context).size.height / 3,
+          // width: MediaQuery.of(context).size.width,
+          // child: GoogleMap(
+          // mapType: MapType.hybrid,
+          // initialCameraPosition: CameraPosition(
+          // target: LatLng(32.427183, -85.702267), zoom: 16),
+          // ),
+          // ),
+          SizedBox(
+            height: 10,
+          ),
+          Expanded(
+            child: ListView.builder(
+              itemCount: kBuildings.length,
+              itemBuilder: (context, index) {
+                return Card(
+                  child: ListTile(
+                    title: Text(kBuildings[index]),
+                    onTap: () {
+                      print('something is not broken');
+                    },
+                    trailing: IconButton(
+                        icon: Icon(Icons.directions),
+                        onPressed: () {
+                          print('Navigate pressed');
+                          print(kBuildings[index]);
+                          switch (kBuildings[index]) {
+                            case 'Abbott Stadium':
+                              {
+                                print(kAbbott_url);
+                                print(kAbbottInfo);
+//launchURL(kAbbott_url);
+
+                              }
+                              break;
+                            case 'Brimmer':
+                              {
+                                print(kBrimmer_url);
+                                print(kBrimmerInfo);
+                                launchURL(kBrimmer_url);
+                              }
+                              break;
+                            case 'Armstrong Hall':
+                              {
+                                print(kArmstrong_url);
+                                print(kArmstrongInfo);
+                                launchURL(kArmstrong_url);
+                              }
+                              break;
+                            case 'Banneker Hall':
+                              {
+                                print(kBanneker_url);
+                                print(kBannekerInfo);
+                                launchURL(kBanneker_url);
+                              }
+                              break;
+                            case 'Basil O Connor Hall':
+                              {
+                                launchURL(kBasil_url);
+                              }
+                              break;
+                            case 'Bethune Hall':
+                              {
+                                launchURL(kBethune_url);
+                              }
+                              break;
+                            case 'Bioethics':
+                              {
+                                launchURL(kBioethics_url);
+                              }
+                              break;
+                            case 'Booker T. Washington Monument':
+                              {
+                                launchURL(kBooker_url);
+                              }
+                              break;
+                            case 'Brimmer':
+                              {
+                                launchURL(kBrimmer_url);
+                              }
+                              break;
+                            case 'Campbell Hall':
+                              {
+                                launchURL(kCampbell_url);
+                              }
+                              break;
+                            case 'Carnegie Hall':
+                              {
+                                launchURL(kCarnegie_url);
+                              }
+                              break;
+                            case 'Carver Foundation':
+                              {
+                                launchURL(kCarver_url);
+                              }
+                              break;
+                            case 'Centralized Laboratory Animal Research Facility':
+                              {
+                                launchURL(kCentralized_url);
+                              }
+                              break;
+                            case 'Chambliss Business House':
+                              {
+                                launchURL(kChambliss_url);
+                              }
+                              break;
+                            case 'Chappie James Arena':
+                              {
+                                launchURL(kChappie_url);
+                              }
+                              break;
+                            case 'Convenience Store':
+                              {
+                                launchURL(kConvenience_url);
+                              }
+                              break;
+                            case 'Douglass Hall':
+                              {
+                                launchURL(kDouglass_url);
+                              }
+                              break;
+                            case 'East Commons':
+                              {
+                                launchURL(kEast_url);
+                              }
+                              break;
+                            case 'Emery I':
+                              {
+                                launchURL(kEmeryI_url);
+                              }
+                              break;
+                            case 'Emery II':
+                              {
+                                launchURL(kEmeryII_url);
+                              }
+                              break;
+                            case 'Emery III':
+                              {
+                                launchURL(kEmeryIII_url);
+                              }
+                              break;
+                            case 'Emery IV':
+                              {
+                                launchURL(kEmeryIV_url);
+                              }
+                              break;
+                            case 'Emery Recreation Building':
+                              {
+                                launchURL(kEmeryR_url);
+                              }
+                              break;
+                            case 'Engineering Building':
+                              {
+                                launchURL(kEngineering_url);
+                              }
+                              break;
+                            case 'Ford Library':
+                              {
+                                launchURL(kFord_url);
+                              }
+                              break;
+                            case 'George Washington Carver Museum':
+                              {
+                                launchURL(kCarver_url);
+                              }
+                              break;
+                            case 'Harper Hall':
+                              {
+                                launchURL(kHarper_url);
+                              }
+                              break;
+                            case 'Harvey Hall':
+                              {
+                                launchURL(kHarvey_url);
+                              }
+                              break;
+                            case 'Henderson Hall':
+                              {
+                                launchURL(kHenderson_url);
+                              }
+                              break;
+                            case 'Housing':
+                              {
+                                launchURL(kHousing_url);
+                              }
+                              break;
+                            case 'Huntington Hall':
+                              {
+                                launchURL(kHuntington_url);
+                              }
+                              break;
+                            case 'James Hall':
+                              {
+                                launchURL(kHuntington_url);
+                              }
+                              break;
+                            case 'Kellogg Hotel and Conference Center':
+                              {
+                                launchURL(kKellogg_url);
+                              }
+                              break;
+                            case 'Kresge Center':
+                              {
+                                launchURL(kKresge_url);
+                              }
+                              break;
+                            case 'Large Animal Clinic':
+                              {
+                                launchURL(kLargeAnimal_url);
+                              }
+                              break;
+                            case 'Lewis Adams Hall':
+                              {
+                                launchURL(kLewis_url);
+                              }
+                              break;
+                            case 'Logan Hall':
+                              {
+                                launchURL(kLogan_url);
+                              }
+                              break;
+                            case 'Marable Courts':
+                              {
+                                launchURL(kMarable_url);
+                              }
+                              break;
+                            case 'Margaret Murray Washington Hall':
+                              {
+                                launchURL(kMargaret_url);
+                              }
+                              break;
+                            case 'Milbank Hall':
+                              {
+                                launchURL(kMilbank_url);
+                              }
+                              break;
+                            case 'Morrison Mayberry Hall':
+                              {
+                                launchURL(kMorrison_url);
+                              }
+                              break;
+                            case 'North Commons':
+                              {
+                                launchURL(kNorth_url);
+                              }
+                              break;
+                            case 'Old Adminsitration Building':
+                              {
+                                launchURL(kOld_building_url);
+                              }
+                              break;
+                            case 'Olivia Davidson Hall':
+                              {
+                                launchURL(kOlivia_url);
+                              }
+                              break;
+                            case 'Patterson Hall':
+                              {
+                                launchURL(kFord_url);
+                              }
+                              break;
+                            case 'Physical Plant':
+                              {
+                                launchURL(kPhysical_url);
+                              }
+                              break;
+                            case 'Post Mortem Building':
+                              {
+                                launchURL(kPostMortem_url);
+                              }
+                              break;
+                            case 'Power Plant':
+                              {
+                                launchURL(kPower_url);
+                              }
+                              break;
+                            case 'Robert Circle':
+                              {
+                                launchURL(kRobertCircle_url);
+                              }
+                              break;
+                            case 'Robert R. Moton Hall':
+                              {
+                                launchURL(kRobertR_url);
+                              }
+                              break;
+                            case 'Rockefeller Hall':
+                              {
+                                launchURL(kRockefeller_url);
+                              }
+                              break;
+                            case 'Rosenwald Hall':
+                              {
+                                launchURL(kRosenwald_url);
+                              }
+                              break;
+                            case 'ROTC':
+                              {
+                                launchURL(kROTC_url);
+                              }
+                              break;
+                            case 'Russell Hall':
+                              {
+                                launchURL(kRussell_url);
+                              }
+                              break;
+                            case 'Russell Nursery':
+                              {
+                                launchURL(kRussellNursery_url);
+                              }
+                              break;
+                            case 'Sage Hall':
+                              {
+                                launchURL(kSage_url);
+                              }
+                              break;
+                            case 'Small Animal Clinic':
+                              {
+                                launchURL(kSmall_url);
+                              }
+                              break;
+                            case 'Softball Field':
+                              {
+                                launchURL(kSoftball_url);
+                              }
+                              break;
+                            case 'Tantum Hall':
+                              {
+                                launchURL(kTantum_url);
+                              }
+                              break;
+                            case 'The Oaks':
+                              {
+                                launchURL(kOaks_url);
+                              }
+                              break;
+                            case 'Thrasher Hall':
+                              {
+                                launchURL(kThrasher_url);
+                              }
+                              break;
+                            case 'Tompkins Hall':
+                              {
+                                launchURL(kTompkins_url);
+                              }
+                              break;
+                            case 'Tuskegee Univ. Police Dept.':
+                              {
+                                launchURL(kPolice_url);
+                              }
+                              break;
+                            case 'University Apartment':
+                              {
+                                launchURL(kUniversityApartment_url);
+                              }
+                              break;
+                            case 'University Chapel':
+                              {
+                                launchURL(kUniversityChapel_url);
+                              }
+                              break;
+                            case 'Washington Field':
+                              {
+                                launchURL(kWashingtonField_url);
+                              }
+                              break;
+                            case 'West Commons':
+                              {
+                                launchURL(kWest_url);
+                              }
+                              break;
+                            case 'White Hall':
+                              {
+                                launchURL(kWhite_url);
+                              }
+                              break;
+                            case 'WIlcox A':
+                              {
+                                launchURL(kWilcoxA_url);
+                              }
+                              break;
+                            case 'Wilcox B':
+                              {
+                                launchURL(kWilcoxB_url);
+                              }
+                              break;
+                            case 'Wilcox C':
+                              {
+                                launchURL(kWilcoxC_url);
+                              }
+                              break;
+                            case 'Wilcox D':
+                              {
+                                launchURL(kWilcoxD_url);
+                              }
+                              break;
+                            case 'Wilcox E':
+                              {
+                                launchURL(kWilcoxE_url);
+                              }
+                              break;
+                            case 'William V. Chambliss House':
+                              {
+                                launchURL(kChambliss_url);
+                              }
+                              break;
+                            case 'Williams - Bowie Hall':
+                              {
+                                launchURL(kWilliamsB_url);
+                              }
+                              break;
+                            case 'Younge Hall':
+                              {
+                                launchURL(kYounge_url);
+                              }
+                              break;
+                          }
+                        }),
+                  ),
+                );
+              },
+            ),
+          )
+        ],
+      ),
+      // Text(
+      //   'Index 1: Business',
+      //   style: optionStyle,
+      // ),
+      Scaffold(
+        appBar: AppBar(
+          title: Text('Search Campus Buildings'),
+          actions: [
+            IconButton(
+                icon: Icon(Icons.search_outlined),
+                onPressed: () {
+                  showSearch(context: context, delegate: BuildingSearch());
+                })
+          ],
+        ),
+        body: Text(
+          'Index 2: School',
+          style: optionStyle,
+        ),
+      ),
+    ];
     final currentPosition = Provider.of<Position>(context);
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
