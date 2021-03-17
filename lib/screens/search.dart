@@ -49,11 +49,8 @@ class _SearchState extends State<Search> {
               itemCount: kBuildings.length,
               itemBuilder: (context, index) {
                 return Card(
-                  child: ListTile(
+                  child: ExpansionTile(
                     title: Text(kBuildings[index]),
-                    onTap: () {
-                      print('something is not broken');
-                    },
                     trailing: IconButton(
                         icon: Icon(Icons.directions),
                         onPressed: () {
