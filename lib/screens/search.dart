@@ -249,37 +249,49 @@ class _SearchState extends State<Search> {
                                 break;
                               case 'Engineering Building':
                                 {
-                                  launchURL(kEngineering_url);
+                                  setState(() {
+                                    selectedBuildingInfo = kFosterInfo;
+                                  });
                                 }
                                 break;
                               case 'Ford Library':
                                 {
-                                  launchURL(kFord_url);
+                                  setState(() {
+                                    selectedBuildingInfo = kFordLibrary;
+                                  });
                                 }
                                 break;
                               case 'George Washington Carver Museum':
                                 {
-                                  launchURL(kCarver_url);
+                                  setState(() {
+                                    selectedBuildingInfo = kCarverInfo;
+                                  });
                                 }
                                 break;
                               case 'Harper Hall':
                                 {
-                                  launchURL(kHarper_url);
+                                  setState(() {
+                                    selectedBuildingInfo = kHarperInfo;
+                                  });
                                 }
                                 break;
                               case 'Harvey Hall':
                                 {
-                                  launchURL(kHarvey_url);
+                                  setState(() {
+                                    selectedBuildingInfo = kHarveyInfo;
+                                  });
                                 }
                                 break;
                               case 'Henderson Hall':
                                 {
-                                  launchURL(kHenderson_url);
+                                  setState(() {
+                                    selectedBuildingInfo = kHendersonInfo;
+                                  });
                                 }
                                 break;
                               case 'Housing':
                                 {
-                                  launchURL(kHousing_url);
+
                                 }
                                 break;
                               case 'Huntington Hall':

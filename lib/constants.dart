@@ -195,6 +195,7 @@ final String kWilcoxD = 'The buildings are named in honor of William G. Willcox,
 final String kWilcoxE = 'Willcox E accommodates the Advanced Materials Testing Laboratory';
 final String kWilliamV = 'Constructed in 1928, the brick structure, donated by and named for William V. Chambliss, class of 1890, replaced the Children’s House built in 1901.';
 final String kYounge = 'Is a Female Residence Hall for freshmen';
+final String kHendersonInfo = 'Carver Research Building is Agricultural Life Science, Research, Teaching and Extension Building. The building, 40,000 square-foot building will house state-of-the-art classrooms and laboratories to support science and agricultural education programs';
 // final String k = '';
 // final String k = '';
 // final String k = '';
