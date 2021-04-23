@@ -286,7 +286,63 @@ final String kWilliamV_url = 'https://www.google.com/maps/dir//32.430896,+-85.71
 final String kWilcoxE_url = 'https://www.google.com/maps/dir//32.430409,+-85.709543/@32.4320748,-85.7564007,15z/data=!4m7!4m6!1m0!1m3!2m2!1d-85.709543!2d32.430409!3e0';
 final String kYounge_url = 'https://www.google.com/maps/dir//32.432771,+-85.707353/@32.4320748,-85.7564007,15z/data=!4m7!4m6!1m0!1m3!2m2!1d-85.707353!2d32.432771!3e0';
 
-// TODO: Figure out whether you can force the maps url to open in walking view
+// Image Paths
+final String kAbbotImage = 'lib/images/abbottstadium.png';
+final String kArmstrongImage = 'lib/images/armstronghall.png';
+final String kBannekerImage = 'lib/images/bannekerhall.png';
+final String kBasilImage = 'lib/images/basiloconnorhall.png';
+final String kBethuneImage = 'lib/images/bethunehall.png';
+final String kBioethicsImage = 'lib/images/bioethics.png';
+final String kBookerMonumentImage = 'lib/images/bookertwashingtonmonument.png';
+final String kBrimmerImage = 'lib/images/brimmerhall.png';
+final String kCampbellImage = 'lib/images/campbellhall.png';
+final String kCarnegieImage = 'lib/images/carnegiehall.png';
+final String kCarverFoundationImage = 'lib/images/carverfoundation.png';
+final String kAnimalLabCentralImage = 'lib/images/centralizedlaboratoryanimalresearchfacility.png';
+final String kChappieJamesImage = 'lib/images/chappiejamesarena.png';
+final String kConvenienceImage = 'lib/images/conveniencestore.png';
+final String kDouglassImage = 'lib/images/douglasshall.png';
+final String kEastCommonsImage = 'lib/images/eastcommons.png';
+final String kEmery1Image = 'lib/images/emeryi.png';
+final String kEmery2Image = 'lib/images/emeryii.png';
+final String kEmery3Image = 'lib/images/emeryiii.png';
+final String kEmery4Image = 'lib/images/emeryiv.png';
+final String kEmeryRecreationImage = 'lib/images/emeryrecreationbuilding.png';
+final String kFosterImage = 'lib/images/engineeringbuilding.png';
+final String kFordImage = 'lib/images/fordlibrary.png';
+final String kCarverMuseumImage = 'lib/images/georgewashingtoncarvermuseum.png';
+final String kHarperImage = 'lib/images/harperhall.png';
+final String kHarveyImage = 'lib/images/harveyhall.png';
+final String kHendersonImage = 'lib/images/hendersonhall.png';
+final String kHousingImage = 'lib/images/housing.png';
+final String kHuntingtonHall = 'lib/images/huntingtonhall.png';
+final String kJamesHall = 'lib/images/jameshall.png';
+final String k = '';
+final String k = '';
+final String k = '';
+final String k = '';
+final String k = '';
+final String k = '';
+final String k = '';
+final String k = '';
+final String k = '';
+final String k = '';
+final String k = '';
+final String k = '';
+final String k = '';
+final String k = '';
+final String k = '';
+final String k = '';
+final String k = '';
+final String k = '';
+final String k = '';
+// final String kAbbotImage = '';
+// final String kAbbotImage = '';
+// final String kAbbotImage = '';
+// final String kAbbotImage = '';
+// final String kAbbotImage = '';
+// final String kAbbotImage = '';
+// final String kAbbotImage = '';
 void launchURL(url) async {
 //   const url = 'https://flutter.dev';
   if (await canLaunch(url)) {
@@ -295,6 +351,7 @@ void launchURL(url) async {
     throw 'Could not launch $url';
   }
 }
+
 // Map contacts = Map<String, int>();
 //
 // void working() {
