@@ -342,16 +342,28 @@ final String kRussellHallImage = 'lib/images/russellhall.png';
 final String kRussellNurseryImage = 'lib/images/russellnursery.png';
 final String kSageHallImage = 'lib/images/sagehall.png';
 final String kSmallAnimalClinic = 'lib/images/smallanimalclinic.png';
-final String kSoftball = '';
+final String kSoftball = 'lib/images/softballfield.png';
+final String kTantumImage = 'lib/images/tantumhall.png';
+final String kTennisImage = 'lib/images/tenniscourt.png';
+final String kOaksImage = 'lib/images/tenniscourt.png';
+final String kThrasherImage = 'lib/images/thrasherhall.png';
+final String kTompkinsImage = 'lib/images/tompkinshall.png';
+final String kPoliceImage = 'lib/images/tuskegeeunivpolicedept.png';
+final String kApartmentImage = 'lib/images/universityapartment.png';
+final String kChapelImage = 'lib/images/universitychapel.png';
+final String kWashingtonFieldImage = 'lib/images/washingtonfield.png';
+final String kWestCommonsImage = 'lib/images/washingtonfield.png';
+final String kWhiteImage = 'lib/images/whitehall.png';
+final String kWilcoxAImage = 'lib/images/wilcoxa.png';
+final String kWilcoxBImage = 'lib/images/wilcoxb.png';
+final String kWilcoxCImage = 'lib/images/wilcoxc.png';
+final String kWilcoxDImage = 'lib/images/wilcoxd.png';
+final String kWilcoxEImage = 'lib/images/wilcoxe.png';
+final String kBowieImage = 'lib/images/williamsbowiehall.png';
+final String kChamblissImage = 'lib/images/williamvchamblisshouse.png';
+final String kYoungeImage = 'lib/images/youngehall.png';
 final String k = '';
-final String k = '';
-// final String kAbbotImage = '';
-// final String kAbbotImage = '';
-// final String kAbbotImage = '';
-// final String kAbbotImage = '';
-// final String kAbbotImage = '';
-// final String kAbbotImage = '';
-// final String kAbbotImage = '';
+
 void launchURL(url) async {
 //   const url = 'https://flutter.dev';
   if (await canLaunch(url)) {
