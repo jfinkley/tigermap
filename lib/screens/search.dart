@@ -17,6 +17,7 @@ class _SearchState extends State<Search> {
   BuildContext context;
   String selectedBuildingInfo = '';
   int _selectedIndex = 0;
+  String currentImage = '';
   static const TextStyle optionStyle =
       TextStyle(fontSize: 31, fontWeight: FontWeight.bold);
 
@@ -72,6 +73,9 @@ class _SearchState extends State<Search> {
                               fontWeight: FontWeight.w400,
                             ),
                           ),
+                        ),
+                        Image(
+                          image: AssetImage(currentImage),
                         )
                       ],
                       title: Text(
@@ -84,23 +88,16 @@ class _SearchState extends State<Search> {
                             switch (kBuildings[index]) {
                               case 'Abbott Stadium':
                                 {
-                                  print(kAbbott_url);
-                                  print(kAbbottInfo);
                                   setState(() {
                                     selectedBuildingInfo = kAbbottInfo;
+                                    currentImage = kAbbotImage;
                                   });
                                 }
                                 break;
                               case 'Brimmer':
                                 {
-                                  // setState(() {
-                                  //   print('Set State Called');
-                                  //   selectedBuildingInfo = kBrimmerInfo;
-                                  //   // print(kBrimmer_url);
-                                  //   // print(kBrimmerInfo);
-                                  //   // launchURL(kBrimmer_url);
-                                  // });
                                   setState(() {
+                                    currentImage = kBrimmerImage;
                                     selectedBuildingInfo = kBrimmerInfo;
                                   });
                                 }
@@ -109,6 +106,7 @@ class _SearchState extends State<Search> {
                                 {
                                   setState(() {
                                     selectedBuildingInfo = kArmstrongInfo;
+                                    currentImage = kArmstrongImage;
                                   });
                                 }
                                 break;
@@ -116,6 +114,7 @@ class _SearchState extends State<Search> {
                                 {
                                   setState(() {
                                     selectedBuildingInfo = kBannekerInfo;
+                                    currentImage = kBannekerImage;
                                   });
                                 }
                                 break;
@@ -123,6 +122,7 @@ class _SearchState extends State<Search> {
                                 {
                                   setState(() {
                                     selectedBuildingInfo = kBasilInfo;
+                                    currentImage = kBasilImage;
                                   });
                                 }
                                 break;
@@ -130,6 +130,7 @@ class _SearchState extends State<Search> {
                                 {
                                   setState(() {
                                     selectedBuildingInfo = kBethuneInfo;
+                                    currentImage = kBethuneImage;
                                   });
                                 }
                                 break;
@@ -137,6 +138,7 @@ class _SearchState extends State<Search> {
                                 {
                                   setState(() {
                                     selectedBuildingInfo = kBioethicsInfo;
+                                    currentImage = kBioethicsImage;
                                   });
                                 }
                                 break;
@@ -144,6 +146,7 @@ class _SearchState extends State<Search> {
                                 {
                                   setState(() {
                                     selectedBuildingInfo = kBookerInfo;
+                                    currentImage = kBookerMonumentImage;
                                   });
                                 }
                                 break;
@@ -151,6 +154,7 @@ class _SearchState extends State<Search> {
                                 {
                                   setState(() {
                                     selectedBuildingInfo = kCampbellInfo;
+                                    currentImage = kCampbellImage;
                                   });
                                 }
                                 break;
@@ -158,6 +162,7 @@ class _SearchState extends State<Search> {
                                 {
                                   setState(() {
                                     selectedBuildingInfo = kCarnegieInfo;
+                                    currentImage =kCarnegieImage;
                                   });
                                 }
                                 break;
@@ -165,6 +170,7 @@ class _SearchState extends State<Search> {
                                 {
                                   setState(() {
                                     selectedBuildingInfo = kCarverInfo;
+                                    currentImage =kCarverFoundationImage;
                                   });
                                 }
                                 break;
@@ -172,6 +178,7 @@ class _SearchState extends State<Search> {
                                 {
                                   setState(() {
                                     selectedBuildingInfo = kLargeAnimalInfo;
+                                    currentImage =kAnimalLabCentralImage;
                                   });
                                 }
                                 break;
@@ -179,6 +186,7 @@ class _SearchState extends State<Search> {
                                 {
                                   setState(() {
                                     selectedBuildingInfo = kCHamblissInfo;
+                                    currentImage =kChamblissImage;
                                   });
                                 }
                                 break;
@@ -186,22 +194,23 @@ class _SearchState extends State<Search> {
                                 {
                                   setState(() {
                                     selectedBuildingInfo = kCHamblissInfo;
+                                    currentImage = kChappieJamesImage;
                                   });
                                 }
                                 break;
                               case 'Convenience Store':
                                 {
-
-                                    setState(() {
-                                      selectedBuildingInfo = kConvenienceStore;
-                                    });
-
+                                  setState(() {
+                                    selectedBuildingInfo = kConvenienceStore;
+                                    currentImage = kConvenienceImage;
+                                  });
                                 }
                                 break;
                               case 'Douglass Hall':
                                 {
                                   setState(() {
                                     selectedBuildingInfo = kDouglassInfo;
+                                    currentImage = kDouglassImage;
                                   });
                                 }
                                 break;
@@ -209,6 +218,7 @@ class _SearchState extends State<Search> {
                                 {
                                   setState(() {
                                     selectedBuildingInfo = kEastCommons;
+                                    currentImage = kEastCommonsImage;
                                   });
                                 }
                                 break;
@@ -216,6 +226,7 @@ class _SearchState extends State<Search> {
                                 {
                                   setState(() {
                                     selectedBuildingInfo = kEmeryOneInfo;
+                                    currentImage = kEmery1Image;
                                   });
                                 }
                                 break;
@@ -223,6 +234,7 @@ class _SearchState extends State<Search> {
                                 {
                                   setState(() {
                                     selectedBuildingInfo = kEmeryTwoInfo;
+                                    currentImage = kEmery2Image;
                                   });
                                 }
                                 break;
@@ -230,6 +242,7 @@ class _SearchState extends State<Search> {
                                 {
                                   setState(() {
                                     selectedBuildingInfo = kEmeryThreeInfo;
+                                    currentImage = kEmery3Image;
                                   });
                                 }
                                 break;
@@ -237,6 +250,7 @@ class _SearchState extends State<Search> {
                                 {
                                   setState(() {
                                     selectedBuildingInfo = kEmeryFourInfo;
+                                    currentImage = kEmery4Image;
                                   });
                                 }
                                 break;
@@ -244,6 +258,7 @@ class _SearchState extends State<Search> {
                                 {
                                   setState(() {
                                     selectedBuildingInfo = kEmeryRInfo;
+                                    currentImage = kEmeryRecreationImage;
                                   });
                                 }
                                 break;
@@ -291,37 +306,51 @@ class _SearchState extends State<Search> {
                                 break;
                               case 'Housing':
                                 {
-
+                                  setState(() {
+                                    selectedBuildingInfo = kHousingInfo;
+                                  });
                                 }
                                 break;
                               case 'Huntington Hall':
                                 {
-                                  launchURL(kHuntington_url);
+                                  setState(() {
+                                    selectedBuildingInfo = kHuntingtonInfo;
+                                  });
                                 }
                                 break;
                               case 'James Hall':
                                 {
-                                  launchURL(kHuntington_url);
+                                  setState(() {
+                                    selectedBuildingInfo = kJamesInfo;
+                                  });
                                 }
                                 break;
                               case 'Kellogg Hotel and Conference Center':
                                 {
-                                  launchURL(kKellogg_url);
+                                  setState(() {
+                                    selectedBuildingInfo = kKelloggInfo;
+                                  });
                                 }
                                 break;
                               case 'Kresge Center':
                                 {
-                                  launchURL(kKresge_url);
+                                  setState(() {
+                                    selectedBuildingInfo = kKresgeInfo;
+                                  });
                                 }
                                 break;
                               case 'Large Animal Clinic':
                                 {
-                                  launchURL(kLargeAnimal_url);
+                                  setState(() {
+                                    selectedBuildingInfo = kLargeAnimalInfo;
+                                  });
                                 }
                                 break;
                               case 'Lewis Adams Hall':
                                 {
-                                  launchURL(kLewis_url);
+                                  setState(() {
+                                    selectedBuildingInfo = kLewisInfo;
+                                  });
                                 }
                                 break;
                               case 'Logan Hall':
