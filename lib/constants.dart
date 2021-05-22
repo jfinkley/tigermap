@@ -155,6 +155,7 @@ final String kNorthCommonsInfo =
     'Students who are eligible upperclassmen enjoy the comforts of residing in the modern state-of-the-art living complexes. These apartment style living-learning facilities are cons t rusted on the University campus.';
 final String kOldAdministrationInfo =
     'The offices of Admissions, Dean of Students, and Counseling Center are a part of this building, which previously housed the offices of the first three University presidents, a community post office and a bank /credit union for the residents of Tuskegee.';
+final String kOliviaDavidsonInfo = 'Female Residence Halls';
 final String kPattersonInfo =
     'The five-floor facility includes a media and student center, the school’s office of admissions and recruitment, the Patterson Hall Auditorium and atrium, the Office of the Dean and associate deans, the T.S. Williams Veterinary Medicine Library, a comprehensive classroom, and the departments of biomedical sciences and pathobiology';
 final String kPhysicalBuilding =
@@ -165,6 +166,7 @@ final String kPowerPlant =
     'The Power Plant was built in 1915 and was the source of the campus’ electricity. It appears dilapidated today and is no longer in use.';
 final String kMotonHall =
     'Robert Russa Motorn Hall was built in 1952. Engineering building until 1970, human resource center, job corps center headquarters since 1980. Designed to be built in three units for electrical, mechanical and civil engineering, only two units built. Built by institute construction department.';
+final String kRobertCircleInfo = 'Roberts Circle is a neighborhood in Tuskegee Institute';
 final String kRockefellerHall =
     'Rockefeller Hall built in 1903 through donations from John D. Rockefeller. Three story brick building originally was a boy dormitory housing 160 young men. In later years, it was used as a male dormitory.';
 final String kRosenwaldBuilding =
@@ -328,21 +330,20 @@ final String kMilbankImage = 'lib/images/milbankhall.png';
 final String kMorrisonMayberryImage = 'lib/images/morrisonmayberryhall.png';
 final String kNorthCommonsImage = 'lib/images/northcommons.png';
 final String kOldAdministrationImage = 'lib/images/oldadministrationbuilding.png';
-final String kOliviaDavidson = 'lib/images/oliviadavidsonhall.png';
-final String kPattersonHall = 'lib/images/pattersonhall.png';
-final String kPhysicalPlant = 'lib/images/physicalplant.png';
-final String kPostMortem = 'lib/images/postmortembuilding.png';
+final String kPattersonHallImage = 'lib/images/pattersonhall.png';
+final String kPhysicalPlantImage = 'lib/images/physicalplant.png';
+final String kPostMortemImage = 'lib/images/postmortembuilding.png';
 final String kPowerPlantImage = 'lib/images/powerplant.png';
-final String kRobertCircle = 'lib/images/robertcircle.png';
-final String kRobertMotonHall = 'lib/images/robertrmotonhall.png';
+final String kRobertCircleImage = 'lib/images/robertcircle.png';
+final String kRobertMotonHallImage = 'lib/images/robertrmotonhall.png';
 final String kRockefellerHallImage = 'lib/images/rockefellerhall.png';
-final String kRosenwaldHall = 'lib/images/rosenwaldhall.png';
-final String kRotc = 'lib/images/rotc.png';
+final String kRosenwaldHallImage = 'lib/images/rosenwaldhall.png';
+final String kRotcImage = 'lib/images/rotc.png';
 final String kRussellHallImage = 'lib/images/russellhall.png';
 final String kRussellNurseryImage = 'lib/images/russellnursery.png';
 final String kSageHallImage = 'lib/images/sagehall.png';
-final String kSmallAnimalClinic = 'lib/images/smallanimalclinic.png';
-final String kSoftball = 'lib/images/softballfield.png';
+final String kSmallAnimalClinicImage = 'lib/images/smallanimalclinic.png';
+final String kSoftballImage = 'lib/images/softballfield.png';
 final String kTantumImage = 'lib/images/tantumhall.png';
 final String kTennisImage = 'lib/images/tenniscourt.png';
 final String kOaksImage = 'lib/images/tenniscourt.png';
@@ -362,7 +363,7 @@ final String kWilcoxEImage = 'lib/images/wilcoxe.png';
 final String kBowieImage = 'lib/images/williamsbowiehall.png';
 final String kChamblissImage = 'lib/images/williamvchamblisshouse.png';
 final String kYoungeImage = 'lib/images/youngehall.png';
-final String k = '';
+final String kOliviaDavidsonImage = 'lib/images/oliviadavidsonhall.png';
 
 void launchURL(url) async {
 //   const url = 'https://flutter.dev';
