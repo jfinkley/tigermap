@@ -529,67 +529,106 @@ class _SearchState extends State<Search> {
                                 break;
                               case 'Small Animal Clinic':
                                 {
-                                  launchURL(kSmall_url);
+                                  setState(() {
+                                    selectedBuildingInfo = kSmallClinic;
+                                    currentImage = kSmallAnimalClinicImage;
+                                  });
                                 }
                                 break;
                               case 'Softball Field':
                                 {
-                                  launchURL(kSoftball_url);
+                                  setState(() {
+                                    selectedBuildingInfo = kSoftballFieldInfo;
+                                    currentImage = kSoftballImage;
+                                  });
                                 }
                                 break;
                               case 'Tantum Hall':
                                 {
-                                  launchURL(kTantum_url);
+                                  setState(() {
+                                    selectedBuildingInfo = kTantumHall;
+                                        currentImage = kTantumImage;
+                                  });
                                 }
                                 break;
                               case 'The Oaks':
                                 {
-                                  launchURL(kOaks_url);
+                                  setState(() {
+                                    selectedBuildingInfo = kOaks;
+                                        currentImage = kOaksImage;
+                                  });
                                 }
                                 break;
                               case 'Thrasher Hall':
                                 {
-                                  launchURL(kThrasher_url);
+                                  setState(() {
+                                    selectedBuildingInfo = kThrasherHall;
+                                        currentImage = kThrasherImage;
+                                  });
                                 }
                                 break;
                               case 'Tompkins Hall':
                                 {
-                                  launchURL(kTompkins_url);
+                                  setState(() {
+                                    selectedBuildingInfo = kTompkins;
+                                        currentImage = kTompkinsImage;
+                                  });
                                 }
                                 break;
                               case 'Tuskegee Univ. Police Dept.':
                                 {
-                                  launchURL(kPolice_url);
+                                  setState(() {
+                                    selectedBuildingInfo = kPoliceDepartmentInfo;
+                                        currentImage = kPoliceImage;
+                                  });
                                 }
                                 break;
                               case 'University Apartment':
                                 {
-                                  launchURL(kUniversityApartment_url);
+                                  setState(() {
+                                    selectedBuildingInfo = kUniversityApartmentInfo;
+                                        currentImage = kUniversityApartmentImage;
+                                  });
                                 }
                                 break;
                               case 'University Chapel':
                                 {
-                                  launchURL(kUniversityChapel_url);
+                                  setState(() {
+                                    selectedBuildingInfo = kChapelInfo;
+                                    currentImage = kChapelImage;
+                                  });
                                 }
                                 break;
                               case 'Washington Field':
                                 {
-                                  launchURL(kWashingtonField_url);
+                                  setState(() {
+                                    selectedBuildingInfo = kWashingtonFieldInfo;
+                                    currentImage = kWashingtonFieldImage;
+                                  });
                                 }
                                 break;
                               case 'West Commons':
                                 {
-                                  launchURL(kWest_url);
+                                  setState(() {
+                                    selectedBuildingInfo = kWest;
+                                    currentImage = kWestCommonsImage;
+                                  });
                                 }
                                 break;
                               case 'White Hall':
                                 {
-                                  launchURL(kWhite_url);
+                                  setState(() {
+                                    selectedBuildingInfo = kWhite;
+                                    currentImage = kWhiteImage;
+                                  });
                                 }
                                 break;
                               case 'WIlcox A':
                                 {
-                                  launchURL(kWilcoxA_url);
+                                  setState(() {
+                                    selectedBuildingInfo = kWilcoxA;
+                                    currentImage = kWilcoxAImage;
+                                  });
                                 }
                                 break;
                               case 'Wilcox B':

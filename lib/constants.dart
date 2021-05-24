@@ -162,6 +162,7 @@ final String kPhysicalBuilding =
     'The space allocation and usage, as it relates to the School programmatic activities, are described on the following pages for each building in the Veterinary School Complex.';
 final String kPostMortemBuilding =
     'The Post Mortem Building provides 4,126 NSF for faculty/staff offices, necropsy and poultry diagnostic laboratories, a small seminar room with 15 student stations, and a tissue trimming, solution preparation and gross photography room. This facility has recently been renovated including installation of a new HAVC system, three down draft tables for small animals, stainless steel cabinets and tables, a pneumatic necropsy table for large animals, ceiling mounted spot lights, a hoist, new sinks and a new cold room, safety showers, band saw, 30-seat amphitheater bleachers, a projection screen, a multiple head (7) microscope, a washer and dryer, safety shower/eye wash, and a portable high pressure washer/sterilizer.';
+final String kPoliceDepartmentInfo = 'Tuskegee Univ. Police Dept';
 final String kPowerPlant =
     'The Power Plant was built in 1915 and was the source of the campus’ electricity. It appears dilapidated today and is no longer in use.';
 final String kMotonHall =
@@ -178,6 +179,7 @@ final String kRussellNursery =
 final String kSageHall = 'Is a Female Residence Hall for Underclassmen';
 final String kSmallClinic =
     'The Small Animal Hospital occupies approximately 7,100 NSF of the clinical wing. In addition, an area outside approximately 25 feet from the building provides 6 holding (6 x 12) runs and an exercise area (60 x 40) for companion animal patients. Approximately 500 yards from the clinic is a 1,657 NSF dog kennel serving the programs of the Departments of Biomedical Sciences and Clinical Sciences.';
+final String kSoftballFieldInfo = 'Softball Field';
 final String kTantumHall =
     'Tantum Hall was built in 1907 and used as a female dormitory now.';
 final String kTennisCourt =
@@ -191,12 +193,13 @@ final String kTompkins =
 final String kWest = 'Students who are eligible upperclassmen enjoy the comforts of residing in the modern state-of-the-art living complexes. These apartment style Living learning facilities are constructed on the University campus.';
 final String kWhite = 'White Hall was completed in 1910 and was named after Alexander Moss White, with funds being donated by his children. The clock tower was added in 1913 and had a manual winding system. It was converted to electric in 1951 and still chimes today. The building was the main woman’s dormitory.';
 final String kWilcoxA = 'Constructed in the 1920s, the Wilcox Buildings once housed the so called trades at Tuskegee: carpentry, plumbing, brick masonry, shoe repair, tailoring, and electricity. These structures are examples of buildings constructed by student labor. The buildings are named in honor of William G. Wilcox, member, Board of Trustees, 1907 to 1923.';
-final String kWilcoxB = 'The offices of Campus Technology and the Faculty and Staff Instructional Technology Café have occupancy inside Wilcox B';
-final String kWilcoxC = 'Within Wilcox C is the Department of Architecture. Renovated in 1981';
-final String kWilcoxD = 'The buildings are named in honor of William G. Willcox, member, Board of Trustees, 1907 to 1923.';
-final String kWilcoxE = 'Willcox E accommodates the Advanced Materials Testing Laboratory';
+final String kWilcoxBInfo = 'The offices of Campus Technology and the Faculty and Staff Instructional Technology Café have occupancy inside Wilcox B';
+final String kWilcoxCInfo = 'Within Wilcox C is the Department of Architecture. Renovated in 1981';
+final String kWilcoxDInfo = 'The buildings are named in honor of William G. Willcox, member, Board of Trustees, 1907 to 1923.';
+final String kWilcoxEInfo = 'Willcox E accommodates the Advanced Materials Testing Laboratory';
 final String kWilliamV = 'Constructed in 1928, the brick structure, donated by and named for William V. Chambliss, class of 1890, replaced the Children’s House built in 1901.';
-final String kYounge = 'Is a Female Residence Hall for freshmen';
+final String kYoungeInfo = 'Is a Female Residence Hall for freshmen';
+final String kUniversityApartmentInfo = 'The Tuskegee University Police Department (TUPD), in keeping with the standard police motto, "To Serve and Protect," is faced with a tremendous responsibility and an exciting challenge. The department has a total compliment of 33 full time employees and additional part-time employees. Members of the department are on duty 24 hours per day, 7 days a week.';
 final String kHendersonInfo = 'Carver Research Building is Agricultural Life Science, Research, Teaching and Extension Building. The building, 40,000 square-foot building will house state-of-the-art classrooms and laboratories to support science and agricultural education programs';
 // final String k = '';
 // final String k = '';
@@ -364,6 +367,10 @@ final String kBowieImage = 'lib/images/williamsbowiehall.png';
 final String kChamblissImage = 'lib/images/williamvchamblisshouse.png';
 final String kYoungeImage = 'lib/images/youngehall.png';
 final String kOliviaDavidsonImage = 'lib/images/oliviadavidsonhall.png';
+final String kUniversityApartmentImage = 'lib/images/universityapartment.png';
+final String kPoliceDeptImage = 'lib/images/tuskegeeunivpolicedept.png';
+final String kChapelInfo = 'Originally constructed by the students and faculty in 1898, the“Cathedral of the South” was destroyed by fire in 1957. The religious and spiritual home for the campus was reconstructed in 1969, at a cost of $3.3 million. The home of the “Singing Windows” is considered an architectural wonder because there are no 90-degree angles between the exterior walls.';
+final String kWashingtonFieldInfo = 'Washington Baseball Field was named after James B. Washington who came to Tuskegee from Hampton Institute in 1890. He is affectionately referred to as the "Father of Athletics at Tuskegee." Washington, the adopted brother of Booker T. Washington, organized the first Tuskegee baseball team in 1892';
 
 void launchURL(url) async {
 //   const url = 'https://flutter.dev';
