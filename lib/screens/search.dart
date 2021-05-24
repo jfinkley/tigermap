@@ -19,7 +19,7 @@ class _SearchState extends State<Search> {
   int _selectedIndex = 0;
   String currentImage = '';
   static const TextStyle optionStyle =
-      TextStyle(fontSize: 31, fontWeight: FontWeight.bold);
+  TextStyle(fontSize: 31, fontWeight: FontWeight.bold);
 
   void _onItemTapped(int index) {
     setState(() {
@@ -459,51 +459,72 @@ class _SearchState extends State<Search> {
                                 {
                                   setState(() {
                                     selectedBuildingInfo = kPowerPlant;
-                                    currentImage =kPowerPlantImage;
+                                    currentImage = kPowerPlantImage;
                                   });
                                 }
                                 break;
                               case 'Robert Circle':
                                 {
                                   setState(() {
-                                    selectedBuildingInfo= kRobertCircleInfo;
-                                        currentImage= kRobertCircleImage;
+                                    selectedBuildingInfo = kRobertCircleInfo;
+                                    currentImage = kRobertCircleImage;
                                   });
                                 }
                                 break;
                               case 'Robert R. Moton Hall':
                                 {
-                                  launchURL(kRobertR_url);
+                                  setState(() {
+                                    selectedBuildingInfo = k
+                                    currentImage = kRobertMotonHallImage;
+                                  });
                                 }
                                 break;
                               case 'Rockefeller Hall':
                                 {
-                                  launchURL(kRockefeller_url);
+                                  setState(() {
+                                    selectedBuildingInfo = kRockefellerHall;
+                                    currentImage = kRockefellerHallImage;
+                                  });
                                 }
                                 break;
                               case 'Rosenwald Hall':
                                 {
-                                  launchURL(kRosenwald_url);
+                                  setState(() {
+                                    selectedBuildingInfo = kRosenwaldBuilding;
+                                    currentImage = kRosenwaldHallImage;
+                                  });
                                 }
                                 break;
                               case 'ROTC':
                                 {
-                                  launchURL(kROTC_url);
+                                  setState(() {
+                                    selectedBuildingInfo = kROTCBuilding;
+                                    currentImage = kRotcImage;
+                                  });
                                 }
                                 break;
                               case 'Russell Hall':
-                                {
-                                  launchURL(kRussell_url);
-                                }
+                               {
+                                 setState(() {
+                                   selectedBuildingInfo = kRussellHall;
+                                   currentImage = kRussellHallImage;
+                                 });
+                               }
                                 break;
                               case 'Russell Nursery':
                                 {
-                                  launchURL(kRussellNursery_url);
+                                  setState(() {
+                                    selectedBuildingInfo = kRussellNursery;
+                                    currentImage = kRussellNurseryImage;
+                                  });
                                 }
                                 break;
                               case 'Sage Hall':
                                 {
-                                  launchURL(kSage_url);
+                                  setState(() {
+                                    selectedBuildingInfo = kSageHall;
+                                    currentImage = kSageHallImage;
+                                  });
                                 }
                                 break;
                               case 'Small Animal Clinic':
