@@ -65,12 +65,12 @@ class _SearchState extends State<Search> {
                     child: ExpansionTile(
                       children: [
                         Padding(
-                          padding: const EdgeInsets.all(16.0),
+                          padding: const EdgeInsets.all(24.0),
                           child: Text(
                             selectedBuildingInfo,
                             style: TextStyle(
-                              fontSize: 18,
-                              fontWeight: FontWeight.w400,
+                              fontSize: 21,
+                              fontWeight: FontWeight.w500,
                             ),
                           ),
                         ),
@@ -80,6 +80,9 @@ class _SearchState extends State<Search> {
                       ],
                       title: Text(
                         kBuildings[index],
+                        style: TextStyle(
+                          fontSize: 23,
+                        ),
                       ),
                       leading: IconButton(
                         icon: Icon(Icons.info_outline_rounded),
@@ -474,7 +477,7 @@ class _SearchState extends State<Search> {
                               case 'Robert R. Moton Hall':
                                 {
                                   setState(() {
-                                    selectedBuildingInfo = k
+                                    selectedBuildingInfo = kMotonInfo;
                                     currentImage = kRobertMotonHallImage;
                                   });
                                 }
