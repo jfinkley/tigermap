@@ -633,41 +633,61 @@ class _SearchState extends State<Search> {
                                 break;
                               case 'Wilcox B':
                                 {
-                                  launchURL(kWilcoxB_url);
+                                  setState(() {
+                                    selectedBuildingInfo = kWilcoxBInfo;
+                                    currentImage = kWilcoxBImage;
+                                  });
                                 }
                                 break;
                               case 'Wilcox C':
                                 {
-                                  launchURL(kWilcoxC_url);
+                                  setState(() {
+                                    selectedBuildingInfo = kWilcoxCInfo;
+                                    currentImage = kWilcoxCImage;
+                                  });
                                 }
                                 break;
                               case 'Wilcox D':
                                 {
-                                  launchURL(kWilcoxD_url);
+                                  setState(() {
+                                    selectedBuildingInfo = kWilcoxDInfo;
+                                    currentImage = kWilcoxDImage;
+                                  });
                                 }
                                 break;
                               case 'Wilcox E':
                                 {
-                                  launchURL(kWilcoxE_url);
+                                  setState(() {
+                                    selectedBuildingInfo = kWilcoxEInfo;
+                                    currentImage = kWilcoxEImage;
+                                  });
                                 }
                                 break;
                               case 'William V. Chambliss House':
                                 {
-                                  launchURL(kChambliss_url);
+                                  setState(() {
+                                    selectedBuildingInfo = kCHamblissInfo;
+                                    currentImage = kChamblissImage;
+                                  });
                                 }
                                 break;
                               case 'Williams - Bowie Hall':
                                 {
-                                  launchURL(kWilliamsB_url);
+                                  setState(() {
+                                    selectedBuildingInfo = kBowieInfo;
+                                    currentImage = kBowieImage;
+                                  });
                                 }
                                 break;
                               case 'Younge Hall':
                                 {
-                                  launchURL(kYounge_url);
+                                  setState(() {
+                                    selectedBuildingInfo = kYoungeInfo;
+                                    currentImage = kYoungeImage;
+                                  });
                                 }
                                 break;
                             }
-                            //selectedBuildingInfo = kFosterInfo;
                           });
                         },
                       ),
