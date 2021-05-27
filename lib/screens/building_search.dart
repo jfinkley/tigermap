@@ -3,6 +3,7 @@ import 'package:skegee_map/constants.dart';
 
 class BuildingSearch extends SearchDelegate {
   static String id = 'BuildingSearch';
+
   get building => kBuildings;
 
   @override
@@ -31,23 +32,56 @@ class BuildingSearch extends SearchDelegate {
   @override
   Widget buildResults(BuildContext context) {
     // TODO: implement buildResults
-    return Card(
-      // TODO have query be the key to a map that has a Linked List that has the coordinates,
-      // picture and description
-      // the directions button would have to push to the Google Map
+    return Column(
+      children: [
+        Container(
+          child: Padding(
+            padding: const EdgeInsets.all(24.0),
+            child: Column(
+              children: [
+                Image(
+                  image: AssetImage(kBrimmerImage),
+                ),
+                SizedBox(),
+                Text(
+                  kBrimmerInfo,
+                  style: TextStyle(
+                    fontSize: 20,
+                  ),
+                ),
+                Container(
+                  child: Center(
+                    child: IconButton(
+                      icon: Icon(Icons.directions),
+                      onPressed: () {
+                        launchURL(kBrimmer_url);
+                      }
 
-      color: Colors.red,
-      shape: StadiumBorder(),
-      child: Container(
-        height: 100,
-        width: 100,
-        child: Card(
-          color: Colors.red,
-          child: Center(
-            child: Text(query),
+                    ),
+                  ),
+                )
+
+              ],
+            ),
           ),
         ),
-      ),
+        // Card(
+        //   // TODO have query be the key to a map that has a Linked List that has the coordinates,
+        //
+        //   color: Colors.red,
+        //   shape: StadiumBorder(),
+        //   child: Container(
+        //     height: 100,
+        //     width: 100,
+        //     child: Card(
+        //       color: Colors.red,
+        //       child: Center(
+        //         child: Text(query.toLowerCase()),
+        //       ),
+        //     ),
+        //   ),
+        // ),
+      ],
     );
   }
 
@@ -62,6 +96,7 @@ class BuildingSearch extends SearchDelegate {
       itemBuilder: (context, index) => ListTile(
         onTap: () {
           showResults(context);
+          query = kBuildings.where((p) => p.startsWith(query)) as String;
         },
         leading: Icon(Icons.location_city),
         title: RichText(
