@@ -41,7 +41,7 @@ class _SearchState extends State<Search> {
         appBar: AppBar(
           title: Text('Building List'),
         ),
-        drawer: Drawer(),
+        // drawer: Drawer(),
         body: Column(
           children: [
             // Container(
@@ -704,6 +704,7 @@ class _SearchState extends State<Search> {
                               {
                                 print(kAbbott_url);
                                 print(kAbbottInfo);
+                                launchURL(kAbbott_url);
                               }
                               break;
                             case 'Brimmer':
@@ -715,6 +716,7 @@ class _SearchState extends State<Search> {
                                 //   // print(kBrimmerInfo);
                                 //   // launchURL(kBrimmer_url);
                                 // });
+                                launchURL(kBrimmer_url);
                               }
                               break;
                             case 'Armstrong Hall':

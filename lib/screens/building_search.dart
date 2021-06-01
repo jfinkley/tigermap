@@ -32,6 +32,7 @@ class BuildingSearch extends SearchDelegate {
   @override
   Widget buildResults(BuildContext context) {
     // TODO: implement buildResults
+    print('The query is $query');
     return Column(
       children: [
         Container(
@@ -39,26 +40,43 @@ class BuildingSearch extends SearchDelegate {
             padding: const EdgeInsets.all(24.0),
             child: Column(
               children: [
+                Text(
+                  'Brimmmer',
+                  style: TextStyle(
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.blueAccent
+                  ),
+                ),
+                SizedBox(
+                  height: 30,
+                ),
                 Image(
                   image: AssetImage(kBrimmerImage),
                 ),
-                SizedBox(),
+                SizedBox(
+                  height: 30,
+                ),
                 Text(
                   kBrimmerInfo,
                   style: TextStyle(
                     fontSize: 20,
+                    fontWeight: FontWeight.bold,
                   ),
                 ),
                 Container(
                   child: Center(
-                    child: IconButton(
-                      icon: Icon(Icons.directions),
-                      onPressed: () {
-                        launchURL(kBrimmer_url);
-                      }
+                    child: Card(
+                      child: IconButton(
+                        icon: Icon(Icons.directions),
+                        onPressed: () {
+                          launchURL(kBrimmer_url);
+                        }
 
+                      ),
                     ),
                   ),
+                  width: MediaQuery.of(context).size.width,
                 )
 
               ],
