@@ -5,7 +5,8 @@ class BuildingSearch extends SearchDelegate {
   static String id = 'BuildingSearch';
 
   get building => kBuildings;
-
+ String currentQueryInfo = '';
+ String currentQueryImage = '';
   // clear search
   @override
   List<Widget> buildActions(BuildContext context) {
@@ -53,13 +54,13 @@ class BuildingSearch extends SearchDelegate {
                   height: 30,
                 ),
                 Image(
-                  image: AssetImage(kBrimmerImage),
+                  image: AssetImage(currentQueryImage),
                 ),
                 SizedBox(
                   height: 30,
                 ),
                 Text(
-                  kBrimmerInfo,
+                  currentQueryInfo,
                   style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
@@ -117,6 +118,12 @@ class BuildingSearch extends SearchDelegate {
           showResults(context);
           //query = kBuildings.where((p) => p.startsWith(query)) as String;
           query = suggestionList[0];
+          switch(query){
+            case 'Abbott Stadium':
+              currentQueryInfo = kAbbottInfo;
+
+              break;
+          }
           // print(query);
         },
         leading: Icon(Icons.location_city),
