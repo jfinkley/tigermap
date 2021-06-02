@@ -6,6 +6,7 @@ class BuildingSearch extends SearchDelegate {
 
   get building => kBuildings;
 
+  // clear search
   @override
   List<Widget> buildActions(BuildContext context) {
     return [
@@ -19,7 +20,6 @@ class BuildingSearch extends SearchDelegate {
 
   @override
   Widget buildLeading(BuildContext context) {
-    // TODO: implement buildLeading
     return IconButton(
       // TODO Add Ios Platform Switcher
       icon: Icon(Icons.arrow_back),
@@ -41,7 +41,8 @@ class BuildingSearch extends SearchDelegate {
             child: Column(
               children: [
                 Text(
-                  'Brimmmer',
+                  //'Brimmmer',
+                  query,
                   style: TextStyle(
                     fontSize: 30,
                     fontWeight: FontWeight.bold,
@@ -62,6 +63,7 @@ class BuildingSearch extends SearchDelegate {
                   style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
+                    color: Colors.grey
                   ),
                 ),
                 Container(
@@ -72,7 +74,6 @@ class BuildingSearch extends SearchDelegate {
                         onPressed: () {
                           launchURL(kBrimmer_url);
                         }
-
                       ),
                     ),
                   ),
@@ -114,7 +115,9 @@ class BuildingSearch extends SearchDelegate {
       itemBuilder: (context, index) => ListTile(
         onTap: () {
           showResults(context);
-          query = kBuildings.where((p) => p.startsWith(query)) as String;
+          //query = kBuildings.where((p) => p.startsWith(query)) as String;
+          query = suggestionList[0];
+          // print(query);
         },
         leading: Icon(Icons.location_city),
         title: RichText(
