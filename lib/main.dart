@@ -63,30 +63,7 @@ class MyApp extends StatelessWidget {
               ),
               Search.id: (context) => Search(),
             }));
-    //   MultiProvider(providers: [
-    //   FutureProvider(
-    //       create: (context) => locatorService.getLocation(),
-    //       child: MaterialApp(
-    //           theme: ThemeData(
-    //             primarySwatch: Colors.orange,
-    //             secondaryHeaderColor: Colors.redAccent,
-    //           ),
-    //           debugShowCheckedModeBanner: false,
-    //           initialRoute: Search.id,
-    //           routes: {
-    //             BuildingArchetype.id: (context) => BuildingArchetype(
-    //                   title: 'Brimmer',
-    //                   info: kBrimmerInfo,
-    //                   lat: 32.427183,
-    //                   long: -85.702267,
-    //                 ),
-    //             Search.id: (context) => Search(),
-    //           })),
-    // ]);
+
   }
 }
-/*
-ProxyProvider<Position,Future<List<Place>>>(update: (context,position,places){
-         return (position!=null) ? PlacesService().getPlace();
-    }//TODO finish
-      )*/
+
