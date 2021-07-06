@@ -163,32 +163,32 @@ final String kPhysicalBuilding =
 final String kPostMortemBuilding =
     'The Post Mortem Building provides 4,126 NSF for faculty/staff offices, necropsy and poultry diagnostic laboratories, a small seminar room with 15 student stations, and a tissue trimming, solution preparation and gross photography room. This facility has recently been renovated including installation of a new HAVC system, three down draft tables for small animals, stainless steel cabinets and tables, a pneumatic necropsy table for large animals, ceiling mounted spot lights, a hoist, new sinks and a new cold room, safety showers, band saw, 30-seat amphitheater bleachers, a projection screen, a multiple head (7) microscope, a washer and dryer, safety shower/eye wash, and a portable high pressure washer/sterilizer.';
 final String kPoliceDepartmentInfo = 'Tuskegee Univ. Police Dept';
-final String kPowerPlant =
+final String kPowerPlantInfo =
     'The Power Plant was built in 1915 and was the source of the campus’ electricity. It appears dilapidated today and is no longer in use.';
-final String kMotonHall =
+final String kMotonHallInfo =
     'Robert Russa Motorn Hall was built in 1952. Engineering building until 1970, human resource center, job corps center headquarters since 1980. Designed to be built in three units for electrical, mechanical and civil engineering, only two units built. Built by institute construction department.';
 final String kRobertCircleInfo = 'Roberts Circle is a neighborhood in Tuskegee Institute';
-final String kRockefellerHall =
+final String kRockefellerHallInfo =
     'Rockefeller Hall built in 1903 through donations from John D. Rockefeller. Three story brick building originally was a boy dormitory housing 160 young men. In later years, it was used as a male dormitory.';
-final String kRosenwaldBuilding =
+final String kRosenwaldBuildingInfo =
     'The Department of Pathobiology utilizes this area to provide laboratory instruction in veterinary microbiology, virology, immunology, molecular biology, public health, epidemiology, and clinical microbiology and to provide microbiology laboratory instruction for nursing and allied health students. There are two smaller preparatory laboratories, a storage incubator, and an autoclave room adjacent to this laboratory.';
 final String kROTCBuilding = 'Home of the NROTC';
-final String kRussellHall = 'Is a Female Residence Hall for Upperclassmen';
-final String kRussellNursery =
+final String kRussellHallInfo = 'Is a Female Residence Hall for Upperclassmen';
+final String kRussellNurseryInfo =
     'It was built in 1957. Laboratory school for school of education nursery and kindergarten.';
-final String kSageHall = 'Is a Female Residence Hall for Underclassmen';
+final String kSageHallInfo = 'Is a Female Residence Hall for Underclassmen';
 final String kSmallClinic =
     'The Small Animal Hospital occupies approximately 7,100 NSF of the clinical wing. In addition, an area outside approximately 25 feet from the building provides 6 holding (6 x 12) runs and an exercise area (60 x 40) for companion animal patients. Approximately 500 yards from the clinic is a 1,657 NSF dog kennel serving the programs of the Departments of Biomedical Sciences and Clinical Sciences.';
 final String kSoftballFieldInfo = 'Softball Field';
-final String kTantumHall =
+final String kTantumHallInfo =
     'Tantum Hall was built in 1907 and used as a female dormitory now.';
 final String kTennisCourt =
     'The Pepsico Tennis Courts were completed in 2001. Under the tutelage of head coach Gregory Green, Tuskegee played the 2001 men and women tennis seasons at this facility, which has five courts, lights and seating for approximately 200 spectators.';
-final String kOaks =
+final String kOaksInfo =
     'The students and faculty of Tuskegee constructed the family home of Dr. Booker T. Washington in 1899. It was the first home in Macon County, Alabama, to have running water and electricity. With eight rooms (five bedrooms, three bathrooms), three porches and its original furnishings, it is a mansion by present-day standards. The Oaks is now owned and maintained by the National Park Service under the authorized purchase for preservation of historic structures within the Tuskegee Institute National Historic Site.';
-final String kThrasherHall =
+final String kThrasherHallInfo =
     'Named in memory of Max Bennett Thrasher of Westmoreland, New Hampshire, this handsome three-story brick building was built in 1893.';
-final String kTompkins =
+final String kTompkinsInfo =
     'Tompkins Hall was completed in 1910 and was the main dining hall at Tuskegee Institute. This building was later transformed into the Student Union, thus making it the central point on campus when it came to student life.  ';
 final String kWest = 'Students who are eligible upperclassmen enjoy the comforts of residing in the modern state-of-the-art living complexes. These apartment style Living learning facilities are constructed on the University campus.';
 final String kWhite = 'White Hall was completed in 1910 and was named after Alexander Moss White, with funds being donated by his children. The clock tower was added in 1913 and had a manual winding system. It was converted to electric in 1951 and still chimes today. The building was the main woman’s dormitory.';
@@ -290,7 +290,7 @@ final String kWilliamsB_url = 'https://www.google.com/maps/dir//32.434830,+-85.7
 final String kWilliamV_url = 'https://www.google.com/maps/dir//32.430896,+-85.711715/@32.4320748,-85.7564007,15z/data=!4m7!4m6!1m0!1m3!2m2!1d-85.711715!2d32.430896!3e0';
 final String kWilcoxE_url = 'https://www.google.com/maps/dir//32.430409,+-85.709543/@32.4320748,-85.7564007,15z/data=!4m7!4m6!1m0!1m3!2m2!1d-85.709543!2d32.430409!3e0';
 final String kYounge_url = 'https://www.google.com/maps/dir//32.432771,+-85.707353/@32.4320748,-85.7564007,15z/data=!4m7!4m6!1m0!1m3!2m2!1d-85.707353!2d32.432771!3e0';
-
+final String kOldAdministration_url = "https://www.google.com/maps/dir//32.428376,+-85.704732/@32.4320748,-85.7564007,15z/data=!4m7!4m6!1m0!1m3!2m2!1d-85.704732!2d32.428376!3e0";
 // Image Paths
 final String kAbbotImage = 'lib/images/abbottstadium.png';
 final String kArmstrongImage = 'lib/images/armstronghall.png';
@@ -365,6 +365,7 @@ final String kWilcoxDImage = 'lib/images/wilcoxd.png';
 final String kWilcoxEImage = 'lib/images/wilcoxe.png';
 final String kBowieImage = 'lib/images/williamsbowiehall.png';
 final String kChamblissImage = 'lib/images/williamvchamblisshouse.png';
+final String kEngineeringImage = 'lib/images/engineeringbuilding.png' ;
 final String kYoungeImage = 'lib/images/youngehall.png';
 final String kOliviaDavidsonImage = 'lib/images/oliviadavidsonhall.png';
 final String kUniversityApartmentImage = 'lib/images/universityapartment.png';

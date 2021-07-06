@@ -440,7 +440,26 @@ class BuildingSearch extends SearchDelegate {
                   currentQueryImage = kPoliceDeptImage;
                   currentQueryInfo = kPoliceDepartmentInfo;
               break;
-              case
+            case 'University Apartment':
+              currentQueryURL = kUniversityApartment_url;
+                  currentQueryImage = kUniversityApartmentImage;
+                  currentQueryInfo = kUniversityApartmentInfo;
+              break;
+            case 'University Chapel':
+              currentQueryURL = kUniversityChapel_url;
+                  currentQueryImage = kChapelImage;
+                  currentQueryInfo = kChappieInfo;
+              break;
+            case 'Washington Field':
+              currentQueryURL = kWashingtonField_url;
+                  currentQueryImage = kWashingtonFieldImage;
+                  currentQueryInfo = kWashingtonFieldInfo;
+              break;
+            case 'West Commons':
+              currentQueryURL = kWest_url;
+                  currentQueryImage = kWestCommonsImage;
+                  currentQueryInfo = kWest;
+              break;
 
           }
           currentQueryURL =
