@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Screen Shot 2021-07-06 at 3.10.26 PM.png",
+      "filename" : "thumbnail_image-2.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Screen Shot 2021-07-06 at 3.10.26 PM-1.png",
+      "filename" : "thumbnail_image.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Screen Shot 2021-07-06 at 3.10.26 PM-2.png",
+      "filename" : "thumbnail_image-1.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

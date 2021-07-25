@@ -445,7 +445,7 @@ class _SearchState extends State<Search> {
                               case 'Physical Plant':
                                 {
                                   setState(() {
-                                    selectedBuildingInfo = kPowerPlant;
+                                    selectedBuildingInfo = kPowerPlantInfo;
                                     currentImage = kPowerPlantImage;
                                   });
                                 }
@@ -461,7 +461,7 @@ class _SearchState extends State<Search> {
                               case 'Power Plant':
                                 {
                                   setState(() {
-                                    selectedBuildingInfo = kPowerPlant;
+                                    selectedBuildingInfo = kPowerPlantInfo;
                                     currentImage = kPowerPlantImage;
                                   });
                                 }
@@ -485,7 +485,7 @@ class _SearchState extends State<Search> {
                               case 'Rockefeller Hall':
                                 {
                                   setState(() {
-                                    selectedBuildingInfo = kRockefellerHall;
+                                    selectedBuildingInfo = kRockefellerHallInfo;
                                     currentImage = kRockefellerHallImage;
                                   });
                                 }
@@ -493,7 +493,7 @@ class _SearchState extends State<Search> {
                               case 'Rosenwald Hall':
                                 {
                                   setState(() {
-                                    selectedBuildingInfo = kRosenwaldBuilding;
+                                    selectedBuildingInfo = kRosenwaldBuildingInfo;
                                     currentImage = kRosenwaldHallImage;
                                   });
                                 }
@@ -509,7 +509,7 @@ class _SearchState extends State<Search> {
                               case 'Russell Hall':
                                {
                                  setState(() {
-                                   selectedBuildingInfo = kRussellHall;
+                                   selectedBuildingInfo = kRussellHallInfo;
                                    currentImage = kRussellHallImage;
                                  });
                                }
@@ -517,7 +517,7 @@ class _SearchState extends State<Search> {
                               case 'Russell Nursery':
                                 {
                                   setState(() {
-                                    selectedBuildingInfo = kRussellNursery;
+                                    selectedBuildingInfo = kRussellNurseryInfo;
                                     currentImage = kRussellNurseryImage;
                                   });
                                 }
@@ -525,7 +525,7 @@ class _SearchState extends State<Search> {
                               case 'Sage Hall':
                                 {
                                   setState(() {
-                                    selectedBuildingInfo = kSageHall;
+                                    selectedBuildingInfo = kSageHallInfo;
                                     currentImage = kSageHallImage;
                                   });
                                 }
@@ -549,7 +549,7 @@ class _SearchState extends State<Search> {
                               case 'Tantum Hall':
                                 {
                                   setState(() {
-                                    selectedBuildingInfo = kTantumHall;
+                                    selectedBuildingInfo = kTantumHallInfo;
                                         currentImage = kTantumImage;
                                   });
                                 }
@@ -557,7 +557,7 @@ class _SearchState extends State<Search> {
                               case 'The Oaks':
                                 {
                                   setState(() {
-                                    selectedBuildingInfo = kOaks;
+                                    selectedBuildingInfo = kOaksInfo;
                                         currentImage = kOaksImage;
                                   });
                                 }
@@ -565,7 +565,7 @@ class _SearchState extends State<Search> {
                               case 'Thrasher Hall':
                                 {
                                   setState(() {
-                                    selectedBuildingInfo = kThrasherHall;
+                                    selectedBuildingInfo = kThrasherHallInfo;
                                         currentImage = kThrasherImage;
                                   });
                                 }
@@ -573,7 +573,7 @@ class _SearchState extends State<Search> {
                               case 'Tompkins Hall':
                                 {
                                   setState(() {
-                                    selectedBuildingInfo = kTompkins;
+                                    selectedBuildingInfo = kTompkinsInfo;
                                         currentImage = kTompkinsImage;
                                   });
                                 }
@@ -621,7 +621,7 @@ class _SearchState extends State<Search> {
                               case 'White Hall':
                                 {
                                   setState(() {
-                                    selectedBuildingInfo = kWhite;
+                                    selectedBuildingInfo = kWhiteHallInfo;
                                     currentImage = kWhiteImage;
                                   });
                                 }
