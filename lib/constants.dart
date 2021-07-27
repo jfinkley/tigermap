@@ -384,27 +384,6 @@ void launchURL(url) async {
   }
 }
 
-// Map contacts = Map<String, int>();
-//
-// void working() {
-//   var buildingDirectory = Map<String, BuildingArchetype>();
-//   buildingDirectory['Brimmer'] = BuildingArchetype(
-//     title: 'Brimmer',
-//     info: kBrimmerInfo,
-//     lat: 32.427183,
-//     long: -85.702267,
-//   );
-//   buildingDirectory['Brimmer'] = BuildingArchetype(
-//     title: 'Brimmer',
-//     info: kBrimmerInfo,
-//     lat: 32.427183,
-//     long: -85.702267,
-//   );
-// }
-// Map buildingMap (){
-//   Map<String,String> fruit = new Map();
-//   fruit['banana'] = 'yellow';
-//   return fruit;
-// }
+
 // Colors
 final kMainYellow = Color(0xffE3B821);
