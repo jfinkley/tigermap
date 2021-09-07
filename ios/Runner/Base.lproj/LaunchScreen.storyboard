@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -12,34 +12,36 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Ydg-fD-yQy"/>
-                        <viewControllerLayoutGuide type="bottom" id="xbc-2k-c8Z"/>
+                        <viewControllerLayoutGuide type="top" id="bY8-67-fE5"/>
+                        <viewControllerLayoutGuide type="bottom" id="L8F-do-IcX"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <view key="view" contentMode="scaleAspectFit" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome To TIgerMap" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Uo-cf-a9f">
-                                <rect key="frame" x="73" y="552" width="269" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
-                                <color key="textColor" red="0.91834503410000001" green="0.66925448180000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LaunchImage" translatesAutoresizingMaskIntoConstraints="NO" id="Ed6-2A-bhD">
-                                <rect key="frame" x="-3" y="140" width="420" height="272"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="LaunchImage" translatesAutoresizingMaskIntoConstraints="NO" id="XxD-Dd-3tO">
+                                <rect key="frame" x="0.0" y="44" width="428" height="848"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="L8F-do-IcX" firstAttribute="top" secondItem="XxD-Dd-3tO" secondAttribute="bottom" id="4o3-fX-Bat"/>
+                            <constraint firstItem="XxD-Dd-3tO" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="57q-Z4-dvg"/>
+                            <constraint firstAttribute="trailing" secondItem="XxD-Dd-3tO" secondAttribute="trailing" id="EpH-xN-2Y4"/>
+                            <constraint firstItem="L8F-do-IcX" firstAttribute="top" secondItem="XxD-Dd-3tO" secondAttribute="bottom" id="Q8d-OL-yUm"/>
+                            <constraint firstItem="XxD-Dd-3tO" firstAttribute="top" secondItem="bY8-67-fE5" secondAttribute="bottom" id="WNX-sy-lfA"/>
+                            <constraint firstAttribute="trailing" secondItem="XxD-Dd-3tO" secondAttribute="trailing" id="hHS-ua-Bmd"/>
+                            <constraint firstItem="XxD-Dd-3tO" firstAttribute="top" secondItem="bY8-67-fE5" secondAttribute="bottom" id="l0W-nG-Ptj"/>
+                            <constraint firstItem="XxD-Dd-3tO" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="rmB-zW-ofL"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="76.811594202898561" y="251.11607142857142"/>
+            <point key="canvasLocation" x="71.495327102803728" y="247.51619870410369"/>
         </scene>
     </scenes>
     <resources>
-        <image name="LaunchImage" width="1920" height="1080"/>
+        <image name="LaunchImage" width="1280" height="720"/>
     </resources>
 </document>

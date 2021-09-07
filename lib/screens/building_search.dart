@@ -36,70 +36,71 @@ class BuildingSearch extends SearchDelegate {
   Widget buildResults(BuildContext context) {
     // TODO: implement buildResults
     print('The query is $query');
-    return Column(
-      children: [
-        Container(
-          child: Padding(
-            padding: const EdgeInsets.all(24.0),
-            child: Column(
-              children: [
-                Text(
-                  //'Brimmmer',
-                  query,
-                  style: TextStyle(
-                      fontSize: 30,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.blueAccent),
-                ),
-                SizedBox(
-                  height: 30,
-                ),
-                Image(
-                  image: AssetImage(currentQueryImage),
-                ),
-                SizedBox(
-                  height: 30,
-                ),
-                Text(
-                  currentQueryInfo,
-                  style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.grey),
-                ),
-                Container(
-                  child: Center(
-                    child: Card(
-                      child: IconButton(
-                          icon: Icon(Icons.directions),
-                          onPressed: () {
-                            launchURL(currentQueryURL);
-                          }),
-                    ),
+    return Flexible(
+      child: Column(
+        children: [
+          Container(
+            child: Padding(
+              padding: const EdgeInsets.all(24.0),
+              child: Column(
+                children: [
+                  Text(
+                    //'Brimmmer',
+                    query,
+                    style: TextStyle(
+                        fontSize: 30,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.blueAccent),
                   ),
-                  width: MediaQuery.of(context).size.width,
-                )
-              ],
+                  SizedBox(
+                    height: 30,
+                  ),
+                  Image(
+                    image: AssetImage(currentQueryImage),
+                  ),
+                  SizedBox(
+                    height: 30,
+                  ),
+                  Text(
+                    currentQueryInfo,
+                    style: TextStyle(
+                        fontSize: 12,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.grey),
+                  ),
+                  Container(
+                    child: Center(
+                      child: Card(
+                        child: IconButton(
+                            icon: Icon(Icons.directions),
+                            onPressed: () {
+                              launchURL(currentQueryURL);
+                            }),
+                      ),
+                    ),
+                    width: MediaQuery.of(context).size.width,
+                  )
+                ],
+              ),
             ),
           ),
-        ),
-        // Card(
-        //   // TODO have query be the key to a map that has a Linked List that has the coordinates,
-        //
-        //   color: Colors.red,
-        //   shape: StadiumBorder(),
-        //   child: Container(
-        //     height: 100,
-        //     width: 100,
-        //     child: Card(
-        //       color: Colors.red,
-        //       child: Center(
-        //         child: Text(query.toLowerCase()),
-        //       ),
-        //     ),
-        //   ),
-        // ),
-      ],
+          // Card
+          //
+          //   color: Colors.red,
+          //   shape: StadiumBorder(),
+          //   child: Container(
+          //     height: 100,
+          //     width: 100,
+          //     child: Card(
+          //       color: Colors.red,
+          //       child: Center(
+          //         child: Text(query.toLowerCase()),
+          //       ),
+          //     ),
+          //   ),
+          // ),
+        ],
+      ),
     );
   }
 

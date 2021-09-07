@@ -19,7 +19,7 @@ class _SearchState extends State<Search> {
   int _selectedIndex = 0;
   String currentImage = '';
   static const TextStyle optionStyle =
-  TextStyle(fontSize: 31, fontWeight: FontWeight.bold);
+      TextStyle(fontSize: 31, fontWeight: FontWeight.bold);
 
   void _onItemTapped(int index) {
     setState(() {
@@ -493,7 +493,8 @@ class _SearchState extends State<Search> {
                               case 'Rosenwald Hall':
                                 {
                                   setState(() {
-                                    selectedBuildingInfo = kRosenwaldBuildingInfo;
+                                    selectedBuildingInfo =
+                                        kRosenwaldBuildingInfo;
                                     currentImage = kRosenwaldHallImage;
                                   });
                                 }
@@ -507,12 +508,12 @@ class _SearchState extends State<Search> {
                                 }
                                 break;
                               case 'Russell Hall':
-                               {
-                                 setState(() {
-                                   selectedBuildingInfo = kRussellHallInfo;
-                                   currentImage = kRussellHallImage;
-                                 });
-                               }
+                                {
+                                  setState(() {
+                                    selectedBuildingInfo = kRussellHallInfo;
+                                    currentImage = kRussellHallImage;
+                                  });
+                                }
                                 break;
                               case 'Russell Nursery':
                                 {
@@ -550,7 +551,7 @@ class _SearchState extends State<Search> {
                                 {
                                   setState(() {
                                     selectedBuildingInfo = kTantumHallInfo;
-                                        currentImage = kTantumImage;
+                                    currentImage = kTantumImage;
                                   });
                                 }
                                 break;
@@ -558,7 +559,7 @@ class _SearchState extends State<Search> {
                                 {
                                   setState(() {
                                     selectedBuildingInfo = kOaksInfo;
-                                        currentImage = kOaksImage;
+                                    currentImage = kOaksImage;
                                   });
                                 }
                                 break;
@@ -566,7 +567,7 @@ class _SearchState extends State<Search> {
                                 {
                                   setState(() {
                                     selectedBuildingInfo = kThrasherHallInfo;
-                                        currentImage = kThrasherImage;
+                                    currentImage = kThrasherImage;
                                   });
                                 }
                                 break;
@@ -574,23 +575,25 @@ class _SearchState extends State<Search> {
                                 {
                                   setState(() {
                                     selectedBuildingInfo = kTompkinsInfo;
-                                        currentImage = kTompkinsImage;
+                                    currentImage = kTompkinsImage;
                                   });
                                 }
                                 break;
                               case 'Tuskegee Univ. Police Dept.':
                                 {
                                   setState(() {
-                                    selectedBuildingInfo = kPoliceDepartmentInfo;
-                                        currentImage = kPoliceImage;
+                                    selectedBuildingInfo =
+                                        kPoliceDepartmentInfo;
+                                    currentImage = kPoliceImage;
                                   });
                                 }
                                 break;
                               case 'University Apartment':
                                 {
                                   setState(() {
-                                    selectedBuildingInfo = kUniversityApartmentInfo;
-                                        currentImage = kUniversityApartmentImage;
+                                    selectedBuildingInfo =
+                                        kUniversityApartmentInfo;
+                                    currentImage = kUniversityApartmentImage;
                                   });
                                 }
                                 break;
@@ -686,6 +689,7 @@ class _SearchState extends State<Search> {
                                 {
                                   setState(() {
                                     selectedBuildingInfo = kYoungeInfo;
+                                        //kYoungeInfo;
                                     currentImage = kYoungeImage;
                                   });
                                 }

@@ -53,7 +53,7 @@ android {
 
     buildTypes {
         debug{
-            buildConfigField 'String','GOOGLE_MAPS_API_KEY', GOOGLE_MAPS_API_KEY
+          //  buildConfigField 'String','GOOGLE_MAPS_API_KEY', GOOGLE_MAPS_API_KEY
         }
         release {
             // TODO: Add your own signing config for the release build.
