@@ -1129,7 +1129,7 @@ class _SearchState extends State<Search> {
         ),
       ),
     ];
-    final currentPosition = Provider.of<Position>(context);
+    //final currentPosition = Provider.of<Position>(context);
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
