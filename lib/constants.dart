@@ -377,7 +377,7 @@ final String kMotonInfo = 'Robert Russa Motorn Hall was built in 1952. Engineeri
 
 void launchURL(url) async {
 //   const url = 'https://flutter.dev';
-  if (await canLaunch(url)) {
+  if (await canLaunchUrl(url)) {
     await launch(url);
   } else {
     throw 'Could not launch $url';
