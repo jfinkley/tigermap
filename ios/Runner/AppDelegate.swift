@@ -2,6 +2,7 @@ import UIKit
 import Flutter
 import GoogleMaps
 import UIKit
+import CoreLocation
 
 @UIApplicationMain
 @objc class AppDelegate: FlutterAppDelegate {
@@ -18,6 +19,9 @@ import UIKit
       // Register Flutter plugins.
       //[GeneratedPluginRegistrant registerWithRegistry:self];
     GeneratedPluginRegistrant.register(with: self)
+      let locationManager = CLLocationManager()
+      locationManager.requestWhenInUseAuthorization()
+      
     return super.application(application, didFinishLaunchingWithOptions: launchOptions)
   }
 }
