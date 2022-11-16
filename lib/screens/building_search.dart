@@ -106,8 +106,6 @@ class BuildingSearch extends SearchDelegate {
 
   @override
   Widget buildSuggestions(BuildContext context) {
-    //return Container();
-    // TOOO add autocomplete or autofill so the query is completed
     final suggestionList = query.isEmpty
         ? kRecentBuildings
         : kBuildings.where((p) => p.startsWith(query)).toList();
