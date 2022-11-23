@@ -707,8 +707,6 @@ class _SearchState extends State<Search> {
                               break;
                             case 'Banneker Hall':
                               {
-                                print(kBanneker_url);
-                                print(kBannekerInfo);
                                 launchURL(kBanneker_url);
                               }
                               break;
@@ -1083,10 +1081,6 @@ class _SearchState extends State<Search> {
           ],
         ),
       ),
-      // Text(
-      //   'Index 1: Business',
-      //   style: optionStyle,
-      // ),
       Scaffold(
         appBar: AppBar(
           title: Text('Search Campus Buildings'),
@@ -1104,7 +1098,6 @@ class _SearchState extends State<Search> {
         ),
       ),
     ];
-    //final currentPosition = Provider.of<Position>(context);
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
