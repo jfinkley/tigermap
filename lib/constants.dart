@@ -375,7 +375,6 @@ final String kBowieInfo = 'Named after Drs. T. S. Williams and Walter C. Bowie, 
 final String kMotonInfo = 'Robert Russa Motorn Hall was built in 1952. Engineering building until 1970, human resource center, job corps center headquarters since 1980. Designed to be built in three units for electrical, mechanical and civil engineering, only two units built. Built by institute construction department';
 
 void launchURL(url) async {
-//   const url = 'https://flutter.dev';
   if (await canLaunch(url)) {
     await launch(url);
   } else {
