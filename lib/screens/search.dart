@@ -702,8 +702,6 @@ class _SearchState extends State<Search> {
                               break;
                             case 'Armstrong Hall':
                               {
-                                print(kArmstrong_url);
-                                print(kArmstrongInfo);
                                 launchURL(kArmstrong_url);
                               }
                               break;
