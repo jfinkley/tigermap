@@ -37,19 +37,8 @@ class _SearchState extends State<Search> {
         appBar: AppBar(
           title: Text('Building List'),
         ),
-        // drawer: Drawer(),
         body: Column(
           children: [
-            // Container(
-            // (currentPosition != null)
-            // height: MediaQuery.of(context).size.height / 3,
-            // width: MediaQuery.of(context).size.width,
-            // child: GoogleMap(
-            // mapType: MapType.hybrid,
-            // initialCameraPosition: CameraPosition(
-            // target: LatLng(32.427183, -85.702267), zoom: 16),
-            // ),
-            // ),
             SizedBox(
               height: 10,
             ),
@@ -685,7 +674,6 @@ class _SearchState extends State<Search> {
                                 {
                                   setState(() {
                                     selectedBuildingInfo = kYoungeInfo;
-                                        //kYoungeInfo;
                                     currentImage = kYoungeImage;
                                   });
                                 }
@@ -709,13 +697,6 @@ class _SearchState extends State<Search> {
                               break;
                             case 'Brimmer':
                               {
-                                // setState(() {
-                                //   print('Set State Called');
-                                //   selectedBuildingInfo = kBrimmerInfo;
-                                //   // print(kBrimmer_url);
-                                //   // print(kBrimmerInfo);
-                                //   // launchURL(kBrimmer_url);
-                                // });
                                 launchURL(kBrimmer_url);
                               }
                               break;
