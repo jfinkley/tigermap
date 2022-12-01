@@ -13,12 +13,6 @@ import 'dart:io'; // Server side / command line only package.
 
 void main() {
   runApp(MyApp());
-    // Map<String, String> env = Platform.environment;
-  //  env.forEach((k, v) => print("Key=$k Value=$v"));
-  // Map<String, String> envVars = Platform.environment;
- // var newMap = buildingMap();
-  //newMap.forEach((k, v) => print("Key =$k Value=$v"));
-  // print(envVars['PATH']);
 
 }
 
